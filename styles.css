@@ -121,7 +121,7 @@ header {
   background: var(--Primary-lightblue---1, #1dabd9);
   color: var(--Neutral-Colors-White, #fff);
   text-align: center;
-  font-size: 16px;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -131,7 +131,8 @@ header {
   transition: all 0.3s linear;
 }
 .hero-section-button:hover {
-  background: #2877cc;
+  background: #0755a8;
+  letter-spacing: 1px;
 }
 .hero-section-button i {
   transition: all 0.3s linear;
