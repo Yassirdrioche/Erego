@@ -129,7 +129,7 @@ header {
   position: relative;
   margin: 0 auto;
 }
-.hero-section-button:hover {
+a .hero-section-button:hover {
   background: #0755a8;
 }
 .hero-section-button:hover i {
