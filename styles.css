@@ -128,9 +128,13 @@ header {
   border: none;
   position: relative;
   margin: 0 auto;
+  transition: all 0.3s linear;
 }
-a .hero-section-button:hover {
-  background: #0755a8;
+.hero-section-button:hover {
+  background: #2877cc;
+}
+.hero-section-button i {
+  transition: all 0.3s linear;
 }
 .hero-section-button:hover i {
   transform: translateX(0.5rem);
