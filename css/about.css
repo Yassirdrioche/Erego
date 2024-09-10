@@ -1,0 +1,379 @@
+@import url("https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Rajdhani:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Poppins:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Rajdhani:wght@300;400;500;600;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Merriweather;
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none;
+}
+/* -----------------------header------------------------ */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+.header-container {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  background: #ffffff;
+  height: 5rem;
+  box-shadow: 0px 39px 85px 0px rgba(73, 72, 72, 0.07);
+}
+.header-title {
+  color: var(--Primary-dark-blue--1, #113668);
+  font-size: 1.89rem;
+  font-style: normal;
+  font-weight: 700; /* 45.513px */
+  text-align: start;
+}
+.header-sous-title {
+  color: var(--Primary-lightblue---1, #1dabd9);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 0.669rem;
+  font-style: normal;
+  text-align: start;
+  margin: -0.4rem 0 0 0.2rem;
+}
+.header-logo {
+  display: flex;
+  gap: 6.247px;
+  flex-direction: column;
+  vertical-align: middle;
+  margin-top: 0.2rem;
+}
+.header-section {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.header-container .section-nav ul {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+}
+.header-container .section-nav ul li {
+  list-style-type: none;
+}
+.header-container .section-nav ul a {
+  text-decoration: none;
+  color: #50729f;
+}
+/* ===========================================Hero Section ====================================== */
+.hero-section-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 2rem;
+}
+.hero-section {
+  background: linear-gradient(to bottom, #00000017, #faf5f5d5, #ffffff),
+    url("../picture/aboutHeroSection.png");
+  width: 66.75rem;
+  height: 32.875rem;
+  flex-shrink: 0;
+  background-position: center;
+  background-size: 100%;
+  border-radius: 0.4rem;
+}
+.hero-section .hero-title {
+  color: #113668;
+  text-align: center;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.hero-section .hero-section-description {
+  color: #113668;
+  text-align: center;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+.hero-section .hero-section-p {
+  color: var(--Primary-dark-blue--3, #50729f);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+}
+.hero-section .hero-section-button {
+  display: flex;
+  padding: 20px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 8px;
+  background: var(--Primary-lightblue---1, #1dabd9);
+  color: var(--Neutral-Colors-White, #fff);
+  text-align: center;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border: none;
+  position: relative;
+  margin: 0 auto;
+  transition: all 0.3s linear;
+}
+.hero-section-button:hover {
+  background: #0755a8;
+  letter-spacing: 1px;
+}
+.hero-section-button i {
+  transition: all 0.3s linear;
+}
+.hero-section-button:hover i {
+  transform: translateX(0.5rem);
+}
+.hero-section {
+  display: grid;
+  place-items: end;
+  justify-content: center;
+}
+/* ===================================== About-sous-hero-section======================================== */
+.main-sous-hero {
+  display: flex;
+  width: 100%;
+  padding: 2rem;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+.main-sous-hero .article1 {
+  background: url("../picture/aboutSousHero.png");
+  background-size: 100%;
+  width: 32.5rem;
+  height: 23.4375rem;
+}
+.main-sous-hero .article2 {
+  width: 32.5rem;
+  height: 23.4375rem;
+  display: grid;
+  place-items: center;
+  color: var(--Primary-dark-blue--3, #50729f);
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 24px */
+  justify-content: center;
+  vertical-align: middle;
+  margin-left: 2rem;
+  position: relative;
+}
+.main-sous-hero .article__1 {
+  background: url("../picture/aboutSousHero2.png");
+  background-size: 100%;
+  width: 32.5rem;
+  height: 23.4375rem;
+}
+.main-sous-hero .article2 span {
+  position: absolute;
+  /* text-align: start; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  gap: 0.4rem;
+  margin: 9rem 0 0 0;
+  color: var(--Primary-lightblue---1, #1dabd9);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.main-sous-hero .article2 span i {
+  vertical-align: middle;
+}
+.notre-mession {
+  color: var(--Primary-dark-blue--1, #113668);
+  text-align: center;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+/* ==================================================Organigramme  Section============================================ */
+.organigramme__container {
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+  width: 100%;
+  height: auto;
+  row-gap: 2rem;
+}
+.organigramme__container .organigramme__section {
+  position: relative;
+  display: flex;
+  width: 39.25rem;
+  padding: 2rem 1.5rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  border-radius: 0.5rem;
+  background: var(--Primary-lightblue---5, #e8f7fb);
+  color: var(--Primary-dark-blue--1, #113668);
+  text-align: center;
+  font-family: Merriweather;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 135%;
+}
+.organigramme__container .organigramme__section::before {
+  content: url("../svg/group-arrow.svg");
+  position: absolute;
+  border-radius: 50%;
+  background: var(--Primary-lightblue---1, #1dabd9);
+  box-shadow: 0px 4px 13.7px 0px rgba(29, 171, 217, 0.34);
+  right: 17.9375rem;
+  bottom: -1.625rem;
+  display: flex;
+  width: 3.25rem;
+  height: 3.25rem;
+  justify-self: center;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+}
+.organigramme__section:last-child::before {
+  content: none;
+}
+/* ================================================== Notre__Équipe ============================================= */
+.membre__title {
+  color: var(--Primary-dark-blue--3, #50729f);
+  text-align: center;
+
+  /* H4-bold-700 */
+  font-family: Merriweather;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 135%; /* 37.8px */
+}
+.member-container {
+  width: 100%;
+  height: auto;
+  padding: 6rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  column-gap: 2rem;
+  row-gap: 2rem;
+}
+.member-container .membre__section {
+  display: flex;
+  height: 8.125rem;
+  padding: 2rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+  border-radius: 0.8rem;
+  background: var(--Primary-lightblue---5, #e8f7fb);
+}
+.membre__section .member__p {
+  color: var(--Primary-dark-blue--1, #113668);
+  text-align: center;
+  font-family: Merriweather;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 135%;
+}
+.member__sous__p {
+  color: var(--Primary-dark-blue--3, #50729f);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+}
+.doctor__last {
+  transform: translateX(109%);
+}
+/* =======================================footer================================================== */
+footer {
+  width: 100%;
+  bottom: 0;
+  height: 18em;
+  background: #113668;
+  padding-inline: 4rem;
+  padding-block: 5rem;
+  mix-blend-mode: difference;
+}
+.footer-title,
+.footer-sous-title {
+  color: white;
+}
+.footer-title {
+  font-size: 1.89rem;
+  font-style: normal;
+  font-weight: 700; /* 45.513px */
+  text-align: start;
+}
+.footer-sous-title {
+  font-family: Poppins;
+  font-size: 0.669rem;
+  font-style: normal;
+  margin-top: -0.4rem;
+}
+.footer-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2.3rem;
+}
+.a__icon {
+  display: flex;
+  gap: 0.9rem;
+  justify-content: center;
+  align-items: center;
+}
+.a__icon a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.copyright {
+  color: #fff;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.fa-arrow-up {
+  position: fixed;
+  padding: 0.4rem;
+  background: #79a8d8;
+  color: hsl(0, 3%, 12%);
+  border-radius: 50%;
+  bottom: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  border: none;
+  font-weight: bold;
+  font-size: 1rem;
+}

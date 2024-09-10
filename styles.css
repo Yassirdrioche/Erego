@@ -237,7 +237,8 @@ header {
   font-size: 1.75rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 135%; /* 37.8px */
+  line-height: 135%;
+  width: max-content; /* 37.8px */
 }
 .Evenement-description .E-d-3 {
   color: var(--Primary-dark-blue--2, #315484);
