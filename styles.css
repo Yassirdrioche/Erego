@@ -570,7 +570,6 @@ footer {
   background: #113668;
   padding-inline: 4rem;
   padding-block: 5rem;
-  mix-blend-mode: difference;
 }
 .footer-title,
 .footer-sous-title {
