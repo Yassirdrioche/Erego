@@ -10,11 +10,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
     <title>Colloques</title>
 </head>
 
+
 <body>
+    <!-- Example single danger button -->
+
     <header class="header-container">
         <section class="header-section">
             <div>
@@ -41,18 +44,49 @@
         </section>
         <section class="section-nav">
             <ul>
-                <a href="../index.html">
+                <a target="_blank" href="../index.html">
                     <li>Accueil</li>
                 </a>
-                <a href="../html page/about.html">
+                <a target="_blank" href="../html page/about.html">
                     <li>
                         À propos de nous
                     </li>
                 </a>
+                <div class="container-drop">
+                    <a href="#" id="drop-down" class="drop-down">
+                        <li>Événements <i class="fa-solid fa-angle-down"></i> </li>
+                        <div id="drop-items" class="show show-style">
+                            <a href="colloques.html">
+                                <li>Colloques</li>
+                            </a>
 
-                <a href="#">
-                    <li>Événements <i class="fa-solid fa-angle-down"></i></li>
-                </a>
+                            <label id="semini">Séminaires et conferences</label>
+
+
+
+                            <a href="">
+                                <li>Séminaires d’EREGO</li>
+                            </a>
+
+                            <a href="">
+                                <li>Séminaire doctoraux</li>
+                            </a>
+
+
+                            <a href="">
+                                <li>Conférences</li>
+                            </a>
+                            <a href="">
+                                <li>Journée doctorale de l'EREGO</li>
+                            </a>
+                            <a href="">
+                                <li>Autres</li>
+                            </a>
+                        </div>
+
+                    </a>
+                </div>
+
                 <a href="#">
                     <li>Publications</li>
                 </a>
@@ -63,7 +97,8 @@
     </header>
     <br><br><br><br><br>
     <!-- =======================================Colloques hero Section======================================== -->
-    <div data-aos="fade-up">
+
+    <div>
         <div class="hero-section-container">
             <section class="hero-section">
                 <main>
@@ -94,6 +129,7 @@
             </section>
         </div>
     </div>
+
     <br><br><br>
     <!-- =================================== Colloques sous__hero===================================================  -->
     <!-- ===================================================================PART1================================================================== -->
@@ -247,6 +283,7 @@
     <!-- Example single danger button -->
 
     <script src="../asset/js/script.js"></script>
+    <script src="../asset/js/colloques.js"> </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();

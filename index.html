@@ -38,34 +38,65 @@
 
             <div class="header-logo">
                 <div class="header-title">EREGO</div>
-                <div class="header-sous-title"">FSJES - Ait Melloul</div>
+                <div class="header-sous-title">FSJES - Ait Melloul</div>
             </div>
         </section>
-        <section class=" section-nav">
-                    <ul>
-                        <a href="index.html">
-                            <li>Accueil</li>
-                        </a>
-                        <a href="html page/about.html">
-                            <li>
-                                À propos de nous
-                            </li>
-                        </a>
+        <section class="section-nav">
+            <ul>
+                <a target="_blank" href="index.html">
+                    <li>Accueil</li>
+                </a>
+                <a target="_blank" href="../html page/about.html">
+                    <li>
+                        À propos de nous
+                    </li>
+                </a>
+                <div class="container-drop">
+                    <a href="#" id="drop-down" class="drop-down">
+                        <li>Événements <i class="fa-solid fa-angle-down"></i> </li>
+                        <div id="drop-items" class="show show-style">
+                            <a href="./html page/colloques.html">
+                                <li>Colloques</li>
+                            </a>
 
-                        <a href="">
-                            <li>Événements <i class="fa-solid fa-angle-down"></i></li>
-                        </a>
-                        <a href="">
-                            <li>Publications</li>
-                        </a>
+                            <label id="semini">Séminaires et conferences</label>
 
-                    </ul>
+
+
+                            <a href="">
+                                <li>Séminaires d’EREGO</li>
+                            </a>
+
+                            <a href="">
+                                <li>Séminaire doctoraux</li>
+                            </a>
+
+
+                            <a href="">
+                                <li>Conférences</li>
+                            </a>
+                            <a href="">
+                                <li>Journée doctorale de l'EREGO</li>
+                            </a>
+                            <a href="">
+                                <li>Autres</li>
+                            </a>
+                        </div>
+
+                    </a>
+                </div>
+
+                <a href="#">
+                    <li>Publications</li>
+                </a>
+
+            </ul>
         </section>
 
     </header>
     <br><br><br><br><br><br>
     <!-- -----------------------------------hero-section ----------------------------------------------------->
-    <div data-aos="fade-up">
+    <div>
         <div class="hero-section-container">
             <section class="hero-section">
                 <main>
@@ -361,6 +392,7 @@
     </footer>
     <button class="fa-solid fa-arrow-up" id="btnUp"></button>
     <script src="asset/js/script.js"></script>
+    <script src="asset/js/index.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
