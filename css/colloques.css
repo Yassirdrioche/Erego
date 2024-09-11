@@ -320,3 +320,32 @@ footer {
   font-weight: bold;
   font-size: 1rem;
 }
+/* ===================================swiper ============================================= */
+.swiper {
+  width: 56.25rem;
+  height: auto;
+  box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1);
+  border-radius: 1.2rem;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eeeeee;
+  padding: 3rem;
+  padding-left: 2rem;
+}
+
+.swiper-button-next {
+  color: black;
+}
+
+.swiper-button-prev {
+  color: black;
+}
+
+.swiper-pagination {
+  /* background: #3982a7; */
+  color: rgb(0, 0, 0);
+}
