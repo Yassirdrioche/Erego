@@ -105,6 +105,12 @@ header {
   color: #fff;
   transition: all 0.4s linear;
 }
+.drop-down {
+  color: #50729f;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
 
 /* ===========================================Hero Section ====================================== */
 .hero-section-container {
