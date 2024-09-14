@@ -1,10 +1,7 @@
 const dropDown = document.querySelector("#drop-down");
 const dropItems = document.querySelector("#drop-items");
+const arrowUp = document.querySelector("#angledown");
 dropDown.addEventListener("click", () => {
+  arrowUp.classList.toggle("rotate");
   dropItems.classList.toggle("show");
-});
-const seminaireDrop = document.getElementById("seminairedrop");
-const seminaireItems = document.getElementById("seminaireitme");
-seminaireDrop.addEventListener("click", () => {
-  seminaireItems.classList.toggle("show");
 });

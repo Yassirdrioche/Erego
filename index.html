@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 
 
     <title>EREGO</title>
@@ -52,29 +54,33 @@
                     </li>
                 </a>
                 <div class="container-drop">
-                    <li id="drop-down" class="drop-down">Événements <i class="fa-solid fa-angle-down"></i> </li>
+                    <li id="drop-down" class="drop-down">Événements <i class="fa-solid fa-angle-up rotate"
+                            id="angledown"></i> </li>
 
                     <div id="drop-items" class="show show-style">
                         <a href="./html page/colloques.html">
                             <li>Colloques</li>
                         </a>
 
-                        <label id="semini">Séminaires et conferences</label>
+                        <label id="semini">
+                            <li><label>Séminaires et conferences</label></li>
+                            <ul> <a href="#">
+                                    <li>Séminaires d’EREGO</li>
+                                </a>
+
+                                <a href="#">
+                                    <li>Séminaire doctoraux</li>
+                                </a>
+                                <a href="#">
+                                    <li>conférences</li>
+                                </a>
+                            </ul>
+
+                        </label>
 
 
 
-                        <a href="">
-                            <li>Séminaires d’EREGO</li>
-                        </a>
 
-                        <a href="">
-                            <li>Séminaire doctoraux</li>
-                        </a>
-
-
-                        <a href="">
-                            <li>Conférences</li>
-                        </a>
                         <a href="">
                             <li>Journée doctorale de l'EREGO</li>
                         </a>
@@ -94,9 +100,8 @@
         </section>
 
     </header>
-    <br><br><br><br><br><br>
     <!-- -----------------------------------hero-section ----------------------------------------------------->
-    <div>
+    <div class="here-parent">
         <div class="hero-section-container">
             <section class="hero-section">
                 <main>
@@ -108,207 +113,330 @@
                     </aside>
                     <aside class="hero-section-description"> Gestion des Organisations</aside>
                     <p class="hero-section-p">Excellence scientifique pour des contributions significatives.</p>
-                    <br><br>
-                    <a href=""><button class="hero-section-button">Savoir plus <i
-                                class="fa-solid fa-arrow-right"></i></button></a>
+                    <div class="hero-a"><a href=""><button class="hero-section-button">Savoir plus <svg
+                                    xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16"
+                                    fill="none">
+                                    <g id="Arrow Right">
+                                        <path id="Line" d="M9.44922 0.949219L16.4999 7.99994L9.44922 15.0507"
+                                            stroke="white" stroke-width="1.66667" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path id="Line_2" d="M16.4999 8L1.5 8" stroke="white" stroke-width="1.66667"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </g>
+                                </svg></button></a></div>
                 </main>
             </section>
         </div>
     </div>
-
-
-
-    <br><br><br><br><br>
     <!-- -------------------------------------------main-sous-section------------------------------------------------ -->
 
-    <div data-aos="fade-up" data-aos-duration="2000">
-        <main class="main-sous-hero">
+    <section class="main-sous-parent">
+        <main class="main-sous-hero" data-aos="fade-up">
+
             <article class="article1"></article>
-            <article class="article2">Fondée en 2018, l'EREGO est une unité de recherche pluridisciplinaire à
-                l'Université
-                d'Ait Melloul, dédiée à l'excellence scientifique en sciences économiques et de gestion.
-                <span>Savoir
-                    plus <i class="fa-solid fa-arrow-right"></i></span>
+            <article class="article2">
+                <div>Fondée en 2018, l'EREGO est une unité de recherche pluridisciplinaire à l'Université d'Ait Melloul,
+                    dédiée à l'excellence scientifique en sciences économiques
+                    et <p>de gestion.</p>
+                </div>
+                <div><a href="">Savoir
+                        plus <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16"
+                            fill="none">
+                            <g id="Arrow Right">
+                                <path id="Line" d="M8.94922 0.949219L15.9999 7.99994L8.94922 15.0507" stroke="#1DABD9"
+                                    stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                                <path id="Line_2" d="M15.9999 8L1 8" stroke="#1DABD9" stroke-width="1.66667"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </g>
+                        </svg></a></div>
             </article>
+
         </main>
-    </div>
+    </section>
 
-    <br><br><br>
     <!-- --------------------------------------------------- Evenement Actuel -------------------------------------- -->
-    <div class="Evenement-h2" data-aos="zoom-out-right">Événement Actuel</div>
-    <br><br><br><br><br>
-    <section class="Evenement-section" data-aos="fade-up" data-aos-duration="2000">
-        <aside class="Evenement-picture">
-            <img loading="lazy" src="picture/Securite-Alimentaire.png" alt="">
-        </aside>
-        <aside class="Evenement-description">
-            <section class="E-section1">
-                <div class="E-d-1">Colloque
-                    international:</div>
-                <div class="E-d-2">La sécurité alimentaire </div>
-                <div class="E-d-2"> au défi de la durabilité</div>
-            </section>
-            <section class="E-section2">
-                <div class="E-d-3">07 Mars 2024</div>
-                <div class="E-btn"><a href="">Appel à communication
-                        <i class="fa-solid fa-arrow-right"></i></a></div>
-            </section>
+    <section class="Evenement-parent">
+        <div class="Evenement-section-container">
+            <section class="Evenement-h2" data-aos="fade-up">Événement Actuel</section>
+            <section class="Evenement-section" data-aos="fade-up">
+                <aside class="Evenement-picture">
+                    <img loading="lazy" src="picture/Securite-Alimentaire.png" alt="">
+                </aside>
+                <aside class="Evenement-description">
+                    <section class="E-section1">
+                        <div class="E-d-1">Colloque
+                            international:</div>
+                        <div class="E-d-2">La sécurité alimentaire </div>
+                        <div class="E-d-2"> au défi de la durabilité</div>
+                    </section>
+                    <section class="E-section2">
+                        <div class="E-d-3">07 Mars 2024</div>
+                        <div class="E-btn"><a href="#" class="Axe-publications-link">Appel à communication<svg
+                                    xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16"
+                                    fill="none">
+                                    <g id="Arrow Right">
+                                        <path id="Line" d="M8.94922 0.949219L15.9999 7.99994L8.94922 15.0507"
+                                            stroke="#1DABD9" stroke-width="1.66667" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path id="Line_2" d="M15.9999 8L1 8" stroke="#1DABD9" stroke-width="1.66667"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </g>
+                                </svg></a></div>
+                    </section>
 
 
-        </aside>
+                </aside>
+            </section>
+        </div>
     </section>
 
 
-    <br><br><br><br>
+
+
     <!-- ---------------------------------------Orientation ----------------------------------------------------------------- -->
-    <div class="Evenement-h2" data-aos="zoom-out-right">Orientations Stratégiques</div>
-    <br><br><br>
-    <div class="orientations" data-aos="fade-up" data-aos-duration="2000">
-        <div class="orientations-text">
-            <h2>
-                Excellence en Recherche
-            </h2>
-            <p>
-                Accroître la qualité et l'impact des productions scientifiques
-            </p>
-            <p>en répondant à des appels à projets
-                ambitieux et en </p>
-            <p>développant des collaborations avec des partenaires
-            </p>
-            <p>socio-économiques.</p>
+    <main class="orientations-parent">
+        <div class="orientations-container">
+            <section>
+                <div class="Evenement-h2" data-aos="fade-up">Orientations Stratégiques</div>
+            </section>
+            <section>
+                <div class="orientations" data-aos="fade-up">
+                    <div class="orientations-text">
+                        <h2>
+                            Excellence en Recherche
+                        </h2>
+                        <p>
+                            Accroître la qualité et l'impact des productions scientifiquesen répondant à des appels à
+                            projets
+                            ambitieux et en développant des collaborations avec des partenaires socio-économiques.</p>
+
+                    </div>
+                    <div class="orientations-image">
+                        <img loading="lazy"
+                            alt="A man speaking at a conference table with microphones and water bottles in front of him."
+                            height="400" src="picture/orientation1.png" width="600" />
+                    </div>
+                </div>
 
         </div>
-        <div class="orientations-image">
-            <img loading="lazy"
-                alt="A man speaking at a conference table with microphones and water bottles in front of him."
-                height="400" src="picture/orientation1.png" width="600" />
+        <div class="orientations-container">
+            <div class="orientations" data-aos="fade-up">
+
+                <div class="orientations-image">
+                    <img loading="lazy"
+                        alt="A man speaking at a conference table with microphones and water bottles in front of him."
+                        height="400" src="picture/orientation2.png" width="600" />
+                </div>
+
+                <div class="orientations-text">
+                    <h2>
+                        Attractivité et Visibilité
+                    </h2>
+                    <p>
+                        Renforcer l'attractivité territoriale et la visibilité nationale parla valorisation des travaux
+                        de
+                        recherche et l'intégrationdans des réseaux académiques et professionnels.
+                </div>
+            </div>
         </div>
-    </div>
-    <br><br><br>
 
-    <div class="orientations" data-aos="fade-up" data-aos-duration="2000">
-
-        <div class="orientations-image">
-            <img loading="lazy"
-                alt="A man speaking at a conference table with microphones and water bottles in front of him."
-                height="400" src="picture/orientation2.png" width="600" />
+        <div class="orientations-container">
+            <div class="orientations" data-aos="fade-up">
+                <div class="orientations-text">
+                    <h2>
+                        Formation par la Recherche
+                    </h2>
+                    <p>Développer un programme doctoral attractif, visant à former et accompagner les doctorants pour
+                        améliorer leur insertion professionnelle.
+                    </p>
+                </div>
+                <div class="orientations-image">
+                    <img loading="lazy"
+                        alt="A man speaking at a conference table with microphones and water bottles in front of him."
+                        height="400" src="picture/orientation3.png" width="600" />
+                </div>
+            </div>
+            </section>
         </div>
 
-        <div class="orientations-text">
-            <h2>
-                Attractivité et Visibilité
-            </h2>
-            <p>
-                Renforcer l'attractivité territoriale et la visibilité nationale par
-            </p>
-            <p>la valorisation des travaux de
-                recherche et l'intégration</p>
-            <p>dans des réseaux académiques et
-                professionnels.</p>
-        </div>
-    </div>
-    <br><br><br>
+        <div class="orientations-container">
+            <div class="orientations" data-aos="fade-up">
 
-    <div class="orientations" data-aos="fade-up" data-aos-duration="2000">
-        <div class="orientations-text">
-            <h2>
-                Formation par la Recherche
-            </h2>
-            <p>Développer un programme doctoral attractif, visant à former </p>
-            <p>et accompagner les doctorants pour améliorer leur insertion </p>
-            <p>professionnelle.</p>
-            </p>
-        </div>
-        <div class="orientations-image">
-            <img loading="lazy"
-                alt="A man speaking at a conference table with microphones and water bottles in front of him."
-                height="400" src="picture/orientation3.png" width="600" />
-        </div>
-    </div>
-    <br><br><br>
+                <div class="orientations-image">
+                    <img loading="lazy"
+                        alt="A man speaking at a conference table with microphones and water bottles in front of him."
+                        height="400" src="picture/orientation4.png" width="600" />
+                </div>
+                <div class="orientations-text">
+                    <h2>
+                        Rayonnement International
+                    </h2>
 
-    <div class="orientations" data-aos="fade-up" data-aos-duration="2000">
-
-        <div class="orientations-image">
-            <img loading="lazy"
-                alt="A man speaking at a conference table with microphones and water bottles in front of him."
-                height="400" src="picture/orientation4.png" width="600" />
+                    <p>Étendre le rayonnement international enaccueillant deschercheurs de renommée mondiale eten
+                        établissant despartenariats internationaux.
+                    </p>
+                </div>
+            </div>
         </div>
-        <div class="orientations-text">
-            <h2>
-                Rayonnement International
-            </h2>
+    </main>
 
-            <p> Étendre le rayonnement international en
-                accueillant des chercheurs</p>
-            <p>de renommée mondiale eten établissant des</p>
 
-            <p> partenariats internationaux.</p>
-        </div>
-    </div>
-    <br><br><br><br>
     <!-- ----------------------------------------------------------Axes de Recherche----------------------------------------------------- -->
-    <div class="Evenement-h2" data-aos="zoom-out-right">Nos Axes de Recherche</div>
-    <div class="Axe-container" data-aos="fade-up" data-aos-duration="2000">
-        <div class="Axe-card Axe-card-1">
-            <h3>MML</h3>
-            <p>Marketing,<br>Management et<br>Logistique</p>
-        </div>
-        <div class="Axe-card Axe-card-2">
 
-            <h3>PEC</h3>
-            <p>Politiques<br>Économiques et<br>Compétitivité</p>
-        </div>
-        <div class="Axe-card Axe-card-3">
-            <h3>FGB</h3>
-            <p>Finance et<br>Gouvernance<br>Bancaire</p>
-        </div>
+    <div class="Axe-container" data-aos="fade-up">
+        <section>
+            <div class="Evenement-h2" data-aos="fade-up">Nos Axes de Recherche</div>
+        </section>
+        <section>
+            <div class="Axe-card Axe-card-1">
+                <h3>MML</h3>
+                <p>Marketing,</p>
+                <p>Management et Logistique</p>
+
+            </div>
+            <div class="Axe-card Axe-card-2">
+
+                <h3>PEC</h3>
+                <p>Politiques Économiques et Compétitivité</p>
+            </div>
+            <div class="Axe-card Axe-card-3">
+                <h3>FGB</h3>
+                <p>Finance et Gouvernance</p>
+                <p> Bancaire</p>
+            </div>
+        </section>
+        <section><a href="#" class="Axe-publications-link">Voir Nos Publications<svg xmlns="http://www.w3.org/2000/svg"
+                    width="17" height="16" viewBox="0 0 17 16" fill="none">
+                    <g id="Arrow Right">
+                        <path id="Line" d="M8.94922 0.949219L15.9999 7.99994L8.94922 15.0507" stroke="#1DABD9"
+                            stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                        <path id="Line_2" d="M15.9999 8L1 8" stroke="#1DABD9" stroke-width="1.66667"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </g>
+                </svg></a></section>
     </div>
-    <center><a href="#" class="Axe-publications-link">Voir Nos Publications <i class="fas fa-arrow-right"></i></a>
-    </center><br><br><br><br>
-    <!-- -------------------------------------------------------------------Notre Impact ----------------------------------------------- -->
-    <div class="Evenement-h2" data-aos="fade-up" data-aos-duration="2000">No Notre Impact</div>
-    <div class="Impact-container" data-aos="fade-up" data-aos-duration="2000">
-        <div class="Impact-box Impact-box-1">
-            <p>Collaborations avec le <br>secteur socio-économique</p>
-        </div>
-        <div class="Impact-box Impact-box-2">
-            <p>Reconnaissance internationale</p>
-        </div>
-        <div class="Impact-box Impact-box-3">
-            <p>Influence sur les politiques publiques</p>
-        </div>
-    </div>
-    <br><br>
-    <a href="#" class="Impact-link">Voir Nos Réalisations <i class="fas fa-arrow-right"></i></a>
-    <br><br><br>
+
+
+
+    <!-- -------------------------------------------------------------------Notre Impact----------------------------------------------- -->
+    <section class="Impact-parent">
+        <main class="Impact-child">
+            <aside class="Evenement-h2" data-aos="fade-up">No Notre Impact</aside>
+            <aside>
+                <div class="Impact-container" data-aos="fade-up">
+                    <section></section>
+                    <div class="Impact-box Impact-box-1">
+                        <p>Collaborations avec lesecteur socio-économique</p>
+                    </div>
+                    <div class="Impact-box Impact-box-2">
+                        <p>Reconnaissance internationale</p>
+                    </div>
+                    <div class="Impact-box Impact-box-3">
+                        <p>Influence sur les politiques publiques</p>
+                    </div>
+                </div>
+                <a href="#" class="Impact-link" style="margin-left: 2rem;"><button>Voir Nos Réalisations <svg
+                            xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+                            <g id="Arrow Right">
+                                <path id="Line" d="M8.94922 0.949219L15.9999 7.99994L8.94922 15.0507" stroke="#1DABD9"
+                                    stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                                <path id="Line_2" d="M15.9999 8L1 8" stroke="#1DABD9" stroke-width="1.66667"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </g>
+                        </svg></button></a>
+
+            </aside>
+
+        </main>
+    </section>
     <!-- ------------------------------------------------------------Actualités-------------------------------------------------------- -->
-    <div class="Evenement-h2" data-aos="zoom-out-right">Actualités</div>
+    <div style="display: grid;place-items: center;width: 100%;margin-left: 2rem;">
+        <aside class="Evenement-h2" style="margin-left: 4rem;" data-aos="fade-up">Actualités</aside>
+        <!-- Swiper -->
+        <section class="swiper-container">
 
-    <div class="act-container" data-aos="fade-up" data-aos-duration="2000">
-        <div class="act-card act-card1 ">
-            <div class="card-content">
-                <h3>Séminaire</h3>
-                <p>Quel Modèle De Développement Pour Demain ?</p>
-                <a href="#">Savoir plus <i class="fas fa-arrow-right"></i></a>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide swip__slide__1">
+                        <div class="swiper-text">
+                            <div class="swip-title">Séminaire</div>
+                            <div class="swip-desc">Quel Modèle De Développement Pour Demain ?</div>
+                            <div class="swip-link"><a href="#" class="Axe-publications-link">Savoire plus<svg
+                                        xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16"
+                                        fill="none">
+                                        <g id="Arrow Right">
+                                            <path id="Line" d="M8.94922 0.949219L15.9999 7.99994L8.94922 15.0507"
+                                                stroke="#1DABD9" stroke-width="1.66667" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path id="Line_2" d="M15.9999 8L1 8" stroke="#1DABD9" stroke-width="1.66667"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </g>
+                                    </svg></a></div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swip__slide__2">
+                        <div class="swiper-text">
+                            <div class="swip-title">Séminaire</div>
+                            <div class="swip-desc">l'habilitation universitaire à diriger des recherches.</div>
+                            <div class="swip-link"><a href="#" class="Axe-publications-link">Savoire plus<svg
+                                        xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16"
+                                        fill="none">
+                                        <g id="Arrow Right">
+                                            <path id="Line" d="M8.94922 0.949219L15.9999 7.99994L8.94922 15.0507"
+                                                stroke="#1DABD9" stroke-width="1.66667" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path id="Line_2" d="M15.9999 8L1 8" stroke="#1DABD9" stroke-width="1.66667"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </g>
+                                    </svg></a></div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swip__slide__3">
+                        <div class="swiper-text">
+                            <div class="swip-title">Séminaire</div>
+                            <div class="swip-desc">Réussir sa promotion dans la carrière d'enseignant-chercheur</div>
+                            <div class="swip-link"><a href="#" class="Axe-publications-link">Savoire plus<svg
+                                        xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16"
+                                        fill="none">
+                                        <g id="Arrow Right">
+                                            <path id="Line" d="M8.94922 0.949219L15.9999 7.99994L8.94922 15.0507"
+                                                stroke="#1DABD9" stroke-width="1.66667" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path id="Line_2" d="M15.9999 8L1 8" stroke="#1DABD9" stroke-width="1.66667"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </g>
+                                    </svg></a></div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swip__slide__4">
+                        <div class="swiper-text">
+                            <div class="swip-title">Séminaire</div>
+                            <div class="swip-desc">Les compétences de la réussite universitaire</div>
+                            <div class="swip-link"><a href="#" class="Axe-publications-link">Savoire Plus<svg
+                                        xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16"
+                                        fill="none">
+                                        <g id="Arrow Right">
+                                            <path id="Line" d="M8.94922 0.949219L15.9999 7.99994L8.94922 15.0507"
+                                                stroke="#1DABD9" stroke-width="1.66667" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path id="Line_2" d="M15.9999 8L1 8" stroke="#1DABD9" stroke-width="1.66667"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </g>
+                                    </svg></a></div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="act-card act-card2">
-            <div class="card-content">
-                <h3>Séminaires</h3>
-                <p>Habilitation universitaire à diriger des recherches.</p>
-                <a href="#">Savoir plus <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </div>
-        <div class="act-card act-card3">
-            <div class="card-content">
-                <h3>Séminaire</h3>
-                <p>Maîtriser L'analyse Qualitative À Travers Nvivo.</p>
-                <a href="#">Savoir plus <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </div>
+        </section>
     </div>
-    <br><br><br>
+
+
+
+    <!-- Swiper JS -->
+
+
+    <!-- Initialize Swiper -->
+
     <!-- ---------------------------------------------------------FOOTER -------------------------------------------------- -->
     <footer class="footer">
         <section class="header-section">
@@ -329,13 +457,13 @@
                 </svg>
             </div>
 
-            <div class="header-logo" data-aos="zoom-out-right">
+            <div class="header-logo" data-aos="fade-up">
                 <div class="footer-title">EREGO</div>
                 <div class="footer-sous-title">FSJES - Ait Melloul</div>
             </div>
         </section>
-        <center> <svg data-aos="zoom-out-right" xmlns="http://www.w3.org/2000/svg" width="1200" height="2"
-                viewBox="0 0 1282 2" fill="none">
+        <center> <svg data-aos="fade-up" xmlns="http://www.w3.org/2000/svg" width="1200" height="2" viewBox="0 0 1282 2"
+                fill="none">
                 <path d="M0.5 0.55957H1281.5" stroke="white" stroke-opacity="0.5" />
             </svg></center>
         <div class="footer-flex">
@@ -394,8 +522,27 @@
     <script src="asset/js/script.js"></script>
     <script src="asset/js/index.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script>
         AOS.init();
+    </script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            freeMode: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
     </script>
 </body>
 
