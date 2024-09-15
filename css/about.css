@@ -22,6 +22,15 @@ header {
   left: 0;
   z-index: 999;
 }
+::-webkit-scrollbar {
+  width: 1rem;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #50729f;
+}
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
 .header-container {
   padding: 1rem;
   display: flex;
@@ -135,7 +144,6 @@ header {
 .container-drop {
   position: relative;
 }
-
 .show {
   display: none;
 }
@@ -174,6 +182,7 @@ header {
   justify-content: center;
   width: 100%;
   padding: 2rem;
+  margin-top: 10rem;
 }
 .hero-section {
   background: linear-gradient(to bottom, #00000017, #faf5f5d5, #ffffff),
@@ -184,6 +193,7 @@ header {
   background-position: center;
   background-size: 100%;
   border-radius: 0.4rem;
+  background-repeat: no-repeat;
 }
 .hero-section .hero-title {
   color: #113668;
@@ -192,14 +202,10 @@ header {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  margin-bottom: -1rem;
 }
-.hero-section .hero-section-description {
-  color: #113668;
-  text-align: center;
-  font-size: 2.4rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 150%;
+.here-p-container {
+  padding: 2rem;
 }
 .hero-section .hero-section-p {
   color: var(--Primary-dark-blue--3, #50729f);
@@ -208,36 +214,11 @@ header {
   font-size: 1rem;
   font-style: normal;
   font-weight: 500;
-  line-height: 150%;
+  line-height: 150%; /* 1.5rem */
 }
-.hero-section .hero-section-button {
+.hero-section-child {
   display: flex;
-  padding: 20px 32px;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-  border-radius: 8px;
-  background: var(--Primary-lightblue---1, #1dabd9);
-  color: var(--Neutral-Colors-White, #fff);
-  text-align: center;
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  border: none;
-  position: relative;
-  margin: 0 auto;
-  transition: all 0.3s linear;
-}
-.hero-section-button:hover {
-  background: #0755a8;
-  letter-spacing: 1px;
-}
-.hero-section-button i {
-  transition: all 0.3s linear;
-}
-.hero-section-button:hover i {
-  transform: translateX(0.5rem);
+  flex-direction: column;
 }
 .hero-section {
   display: grid;
@@ -245,23 +226,45 @@ header {
   justify-content: center;
 }
 /* ===================================== About-sous-hero-section======================================== */
-.main-sous-hero {
+.main-parent {
   display: flex;
-  width: 100%;
-  padding: 2rem;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 4rem;
+  margin-top: 6rem;
+}
+.main-child {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.main-container {
+  display: flex;
+  padding: 0rem 0.5rem 6rem 0.5rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  align-self: stretch;
+}
+.main-sous-hero {
+  display: flex;
+  width: 66.75rem;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+.main-sous-hero article {
+  width: 32.5rem;
+  height: 23.4375rem;
 }
 .main-sous-hero .article1 {
   background: url("../picture/aboutSousHero.png");
   background-size: 100%;
-  width: 32.5rem;
-  height: 23.4375rem;
+
+  background-repeat: no-repeat;
 }
 .main-sous-hero .article2 {
-  width: 32.5rem;
-  height: 23.4375rem;
   display: grid;
   place-items: center;
   color: var(--Primary-dark-blue--3, #50729f);
@@ -271,19 +274,16 @@ header {
   font-weight: 500;
   line-height: 150%; /* 24px */
   justify-content: center;
-  vertical-align: middle;
-  margin-left: 2rem;
   position: relative;
+  align-self: stretch;
 }
 .main-sous-hero .article__1 {
   background: url("../picture/aboutSousHero2.png");
   background-size: 100%;
-  width: 32.5rem;
-  height: 23.4375rem;
+  background-repeat: no-repeat;
 }
 .main-sous-hero .article2 span {
   position: absolute;
-  /* text-align: start; */
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -309,6 +309,11 @@ header {
   line-height: normal;
 }
 /* ==================================================Organigramme  Section============================================ */
+.organigramme__parent {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
 .organigramme__container {
   display: grid;
   grid-template-columns: 1fr;
@@ -334,6 +339,12 @@ header {
   font-style: normal;
   font-weight: 700;
   line-height: 135%;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.organigramme__section:hover {
+  background: var(--Primary-lightblue---4, #bbe6f4);
+  box-shadow: 0rem 2.4375rem 5.3125rem 0rem rgba(0, 0, 0, 0.08);
 }
 .organigramme__container .organigramme__section::before {
   content: url("../svg/group-arrow.svg");
@@ -355,11 +366,31 @@ header {
   content: none;
 }
 /* ================================================== Notre__Équipe ============================================= */
+.team-container {
+  display: flex;
+  width: 90rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 6rem;
+}
+.team-child {
+  display: flex;
+  width: 66.75rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  flex-shrink: 0;
+}
+.membre-parent {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
 .membre__title {
   color: var(--Primary-dark-blue--3, #50729f);
   text-align: center;
-
-  /* H4-bold-700 */
   font-family: Merriweather;
   font-size: 28px;
   font-style: normal;
@@ -367,26 +398,30 @@ header {
   line-height: 135%; /* 37.8px */
 }
 .member-container {
-  width: 100%;
-  height: auto;
-  padding: 6rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-content: center;
   align-items: center;
-  column-gap: 2rem;
-  row-gap: 2rem;
+  column-gap: 1.69rem;
+  row-gap: 1.69rem;
 }
 .member-container .membre__section {
   display: flex;
+  width: 21.125rem;
+  border-radius: 0.5rem;
+  background: var(--Primary-lightblue---5, #e8f7fb);
   height: 8.125rem;
   padding: 2rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   align-self: stretch;
-  border-radius: 0.8rem;
-  background: var(--Primary-lightblue---5, #e8f7fb);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.membre__section:hover {
+  background: var(--Primary-lightblue---4, #bbe6f4);
+  box-shadow: 0rem 2.4375rem 5.3125rem 0rem rgba(0, 0, 0, 0.08);
 }
 .membre__section .member__p {
   color: var(--Primary-dark-blue--1, #113668);
@@ -396,6 +431,7 @@ header {
   font-style: normal;
   font-weight: 700;
   line-height: 135%;
+  align-self: stretch;
 }
 .member__sous__p {
   color: var(--Primary-dark-blue--3, #50729f);
@@ -405,19 +441,20 @@ header {
   font-style: normal;
   font-weight: 500;
   line-height: 150%;
+  align-self: stretch;
 }
 .doctor__last {
   transform: translateX(109%);
 }
 /* =======================================footer================================================== */
 footer {
+  margin-top: 6rem;
   width: 100%;
   bottom: 0;
   height: 18em;
   background: #113668;
   padding-inline: 4rem;
   padding-block: 5rem;
-  mix-blend-mode: difference;
 }
 .footer-title,
 .footer-sous-title {
