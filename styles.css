@@ -501,8 +501,6 @@ header {
 .Axe-card:hover {
   border-radius: 0.5rem;
   background: var(--Primary-lightblue---4, #bbe6f4);
-
-  /* Sadow style */
   box-shadow: 0rem 2.4375rem 5.3125rem 0px rgba(0, 0, 0, 0.08);
 }
 .Axe-card-1::before {
@@ -567,7 +565,6 @@ header {
   text-align: center;
   font-style: normal;
   font-weight: 500;
-  line-height: 150%; /* 24px */
 }
 .Axe-publications-link {
   color: var(--Primary-lightblue---1, #1dabd9);
@@ -605,7 +602,9 @@ header {
   transform: translateY(11.3rem);
   left: 50;
 }
-/* -------------------------------------Notre Impact ----------------------------- */
+/* -------------------------------------Notre */
+/* Impact */
+/* ----------------------------- */
 .Impact-parent {
   display: flex;
   width: 90rem;
@@ -644,8 +643,6 @@ header {
 .Impact-box:hover {
   border-radius: 0.5rem;
   background: var(--Primary-lightblue---4, #bbe6f4);
-
-  /* Sadow style */
   box-shadow: 0rem 2.4375rem 5.3125rem 0px rgba(0, 0, 0, 0.08);
 }
 .Impact-box p {
@@ -689,7 +686,7 @@ header {
 .Impact-link button:hover {
   color: #7fcee9;
 }
-
+/*  */
 .Impact-link button:hover #Line,
 #Line_2 {
   stroke: #7fcee9;
@@ -706,7 +703,6 @@ header {
   align-items: center;
   transition: all 0.3s ease;
 }
-
 .Impact-link:hover svg {
   transform: translate(0.2rem);
   stroke: #66bdda;
