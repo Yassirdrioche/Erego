@@ -67,7 +67,7 @@
                                 </a>
 
                                 <a href="#">
-                                    <li>Séminaire doctoraux</li>
+                                    <li>Séminaire Doctorales</li>
                                 </a>
                                 <a href="#">
                                     <li>conférences</li>
@@ -76,7 +76,7 @@
 
                         </label>
                         <a href="">
-                            <li>Journée doctorale de l'EREGO</li>
+                            <li>Séminaire doctoraux</li>
                         </a>
                         <a href="">
                             <li>Autres</li>
@@ -105,10 +105,27 @@
     <main class="swiper__container">
         <div class="swiper mySwiper" id="Swiper">
             <div class="swiper-wrapper">
-                <div class="swiper-slide"></div>
-                <div class="swiper-slide"></div>
-                <div class="swiper-slide"></div>
-                <div class="swiper-slide"></div>
+                <div class="swiper-slide">
+                    <div><img src="../picture/card-act1.png" alt="" class="first-slide"></div>
+                </div>
+                <div class="swiper-slide">
+                    <div style="margin-left: -12rem;"><img src="../picture/cirlogHeroSection.png" alt=""> </div>
+                </div>
+                <div class="swiper-slide">
+                    <div style="margin-left:0rem;"><img src="../picture/cirlog3.jpeg" alt=""></div>
+                </div>
+                <div class="swiper-slide">
+                    <div style="margin-left: 12rem;"><img src="../picture/cirlog4.jpeg" alt=""></div>
+                </div>
+                <div class="swiper-slide">
+                    <div style="margin-left: 24rem;"><img src="../picture/cirlog5.jpeg" alt=""></div>
+                </div>
+                <div class="swiper-slide">
+                    <div style="margin-left: 36rem;"><img src="../picture/cirlog6.jpeg" alt=""></div>
+                </div>
+                <div class="swiper-slide">
+                    <div style="margin-left:50rem;"><img src="../picture/cirlog7.jpeg" alt=""></div>
+                </div>
             </div>
         </div>
     </main>
@@ -119,12 +136,14 @@
     <script src="../asset/js/cirlog.js"></script>
     <script>
         var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 2,
-            spaceBetween: 30,
+            slidesPerView: 3,
+            spaceBetween: 20,
+
 
             pagination: {
                 el: ".swiper-pagination",
                 clickable: true,
+
             },
             navigation: {
                 nextEl: ".swiper-button-next",

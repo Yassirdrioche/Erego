@@ -80,6 +80,7 @@ header {
   font-weight: 400;
   line-height: normal;
   transition: var(--transition-all);
+  position: relative;
 }
 .header-container .section-nav ul a:hover {
   color: #0a2549;
@@ -93,77 +94,108 @@ header {
 }
 #semini {
   display: flex;
-  width: 14.1875rem;
-  padding-left: 1.25rem;
+  width: 100%;
   flex-direction: column;
-  align-items: center;
+}
+#semini li:hover {
+  border-radius: 0.25rem;
+  background: var(--Primary-lightblue---4, #bbe6f4);
+  transition: var(--transition-all);
 }
 
 #semini ul {
   display: none;
   background: #fff;
+  width: 100%;
+  margin-left: 0.4rem;
 }
 
 #semini:hover ul {
   display: block;
 }
-#semini a li {
+#semini > ul a li {
   color: var(--Primary-dark-blue--2, #315484);
-  /* Labale small */
   font-family: Merriweather;
   font-size: 0.75rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-}
-#semini > li {
+  width: 100%;
   display: flex;
-  padding: 0.625rem;
-  gap: 0.625rem;
+  padding: 0.25rem 1rem;
   align-items: center;
-  text-align: start;
-  justify-content: center;
-  width: 25rem;
-  color: var(--Primary-dark-blue--2, #315484);
-}
-#semini > li label {
-  cursor: pointer;
-}
-#semini > li label:hover {
-  color: #fff;
-}
-
-#semini li:hover {
-  background-color: #113668;
-  color: #fff;
-  transition: var(--transition-all);
-}
-.container-drop {
+  gap: 0.625rem;
+  align-self: stretch;
   position: relative;
 }
+#semini > ul a li::after {
+  content: url("../svg/navbar2.svg");
+  position: absolute;
+  transform: scale(0) translate(50%, -50%);
+  margin-right: 5rem;
+  transition: var(--transition-all);
+}
+#semini ul a li:hover::after {
+  transform: scale(1) translateX(0.5rem);
+}
+#semini > li label {
+  width: 100%;
+  color: var(--Primary-dark-blue--2, #315484);
+  display: flex;
+  padding: 0.625rem 0.625rem 0.625rem 1.25rem;
+  align-items: center;
+  gap: 0.625rem;
+  align-self: stretch;
+  position: relative;
+}
+#semini > li label::after {
+  content: url("../svg/navbar.svg");
+  position: absolute;
+  transition: var(--transition-all);
+  right: 0.92075rem;
+  top: 0.6875rem;
+  transform: scale(0);
+}
+#semini > li label:hover::after {
+  transform: scale(1) rotate(90deg);
+}
+
 .show {
   display: none;
 }
 .show-style {
   position: absolute;
+  padding: 0.6rem;
   overflow: hidden;
-  width: 17.1875rem;
+  width: 18rem;
   flex-direction: column;
   align-items: flex-start;
   border-radius: 0rem 1rem 0rem 0rem;
   background: #fff;
-  margin-top: 1.3rem;
+  margin-top: 3rem;
 }
 .show-style a li {
   display: flex;
   padding: 0.625rem 0.625rem 0.625rem 1.25rem;
   align-items: flex-start;
   gap: 0.625rem;
-  align-self: stretch;
+  width: 100%;
+  position: relative;
 }
+.show-style a li::after {
+  content: url("../svg/navbar.svg");
+  position: absolute;
+  right: 2rem;
+  transform: scale(0);
+  transition: var(--transition-all);
+}
+.show-style a li:hover::after {
+  transform: scale(1) translateX(0.5rem);
+}
+
 .show-style a li:hover {
-  background-color: #113668;
-  color: #fff;
+  border-radius: 0.25rem;
+  background: var(--Primary-lightblue---4, #bbe6f4);
   transition: var(--transition-all);
 }
 .drop-down {
