@@ -5,3 +5,4 @@ dropDown.addEventListener("click", () => {
   arrowUp.classList.toggle("rotate");
   dropItems.classList.toggle("show");
 });
+console.log(10 * 10);
