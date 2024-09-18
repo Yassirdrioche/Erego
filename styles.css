@@ -174,7 +174,9 @@ header {
   border-radius: 0rem 1rem 0rem 0rem;
   background: #fff;
   margin-top: 3rem;
+  transition: var(--transition-all);
 }
+
 .show-style a li {
   display: flex;
   padding: 0.625rem 0.625rem 0.625rem 1.25rem;
