@@ -244,6 +244,7 @@ header {
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
+  margin-top: 6rem;
 }
 .hero__child {
   display: flex;
