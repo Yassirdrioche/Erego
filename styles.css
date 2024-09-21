@@ -824,10 +824,6 @@ header {
   gap: 4rem;
 }
 
-.swiper-wrapper {
-  display: grid;
-}
-
 .swiper-slide {
   display: flex;
   height: 100%;
@@ -847,26 +843,44 @@ header {
   background: var(--Primary-lightblue---4, #bbe6f4);
 }
 .swip__slide__1 {
-  background: url("picture/card-act1.png");
+  background: url("picture/cirlog1.png");
   background-repeat: no-repeat;
+  background-size: 100%;
 }
 .swip__slide__2 {
-  background: url("picture/card-act2.png");
+  background: url("picture/Securite-Alimentaire.png");
   background-repeat: no-repeat;
+  background-size: 100%;
 }
 .swip__slide__3 {
-  background: url("picture/card-act3.png");
+  background: url("picture/card-act1.png");
   background-repeat: no-repeat;
+  background-size: 100%;
 }
 .swip__slide__4 {
-  background: url("picture/card-act4.png");
+  background: url("picture/card-act-4.png");
+  background-size: 100%;
   background-repeat: no-repeat;
 }
-
+.swip__slide__5 {
+  background: url("picture/card-act-5.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.swip__slide__6 {
+  background: url("picture/card-act-6.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.swip__slide__7 {
+  background: url("picture/card-act-7.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
 .swiper-text {
   display: flex;
-  width: 100%;
   height: 13rem;
+  width: 100%;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
@@ -897,7 +911,7 @@ header {
   font-family: Poppins;
   font-size: 1rem;
   font-style: normal;
-  font-weight: 520;
+  font-weight: 500;
   line-height: 150%; /* 1*/
   margin-left: 1.2rem;
   width: 17rem;
@@ -913,7 +927,10 @@ header {
   line-height: normal;
   margin-left: 1.2rem;
 }
-
+.swiper-btn-next {
+  background-color: #0a2549;
+  color: white;
+}
 /* ---------------------------------------------footer-------------------------------------- */
 footer {
   display: flex;
