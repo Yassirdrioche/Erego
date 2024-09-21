@@ -600,7 +600,7 @@ footer hr {
   position: fixed;
   padding: 0.4rem;
   background: var(--Primary-lightblue---2);
-  color: hsl(0, 3%, 12%);
+  color: hsl(0, 0%, 100%);
   border-radius: 50%;
   bottom: 0;
   right: 0;
@@ -609,4 +609,5 @@ footer hr {
   border: none;
   font-weight: bold;
   font-size: 1rem;
+  transition: var(--transition-all);
 }
