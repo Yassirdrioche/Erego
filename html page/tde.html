@@ -6,17 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../svg/Erego.svg" type="image/x-icon">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/cirlog.css">
+    <link rel="stylesheet" href="../css/tde.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
-    <title>Cirlog</title>
+    <title>TDE</title>
 </head>
 
-
 <body>
+    <!-- ______________________________________________________Header TDE___________________________________________________________ -->
     <header class="header-container">
         <section class="header-section">
             <div>
@@ -61,8 +60,10 @@
                             <li>Colloques</li>
                         </a>
 
+
+
                         <label id="semini">
-                            <li><label>Séminaires et conferences</label></li>
+                            <li class="hover"><label>Séminaires et conferences</label></li>
                             <ul> <a href="#">
                                     <li>Séminaires d’EREGO</li>
                                 </a>
@@ -94,44 +95,31 @@
         </section>
 
     </header>
-    <!-- -----------------------------------------------Hero Section----------------------------------------------------- -->
-    <div class="hero__parent" data-aos="fade-up">
+    <!-- ______________________________________________TDE Hero Sectio________________________________________________ -->
+    <section class="hero__parent" data-aos="fade-up">
         <main class="hero__child">
-            <section class="hero__title">CIRLOG</section>
-            <section class="hero__description">Colloque international sur la recherche en logistique</section>
+            <aside class="hero__title">TDE</aside>
+            <aside class="hero__description">Territoire et dévoloppement économique</aside>
         </main>
-    </div>
-
-    <!-- __________________________________________SWIPER____________________________________________________ -->
-    <swiper-container data-aos="fade-up" class="mySwiper" space-between=" 30" slides-per-view="auto" pagination="true"
-        pagination-clickable="true" navigation="true">
-        <swiper-slide></swiper-slide>
-        <swiper-slide></swiper-slide>
-        <swiper-slide></swiper-slide>
-        <swiper-slide></swiper-slide>
-    </swiper-container>
-
-    <!-- ______________________________________________cirlog Last Section________________________________________ -->
-    <div class="cirlog__last__parent" data-aos="fade-up">
-        <div class="cirlog__last__child">
-            <section class="cirlog__last__items1"></section>
-            <section class="cirlog__last__items2">
+    </section>
+    <!-- ___________________________________________TDE last Section_______________________________ -->
+    <div class="tde__last__parent" data-aos="fade-up">
+        <div class="tde__last__child">
+            <section class="tde__last__items1"></section>
+            <section class="tde__last__items2">
                 <article class="item1">
-                    Le Colloque International sur la Recherche en Logistique (CIRLOG) réunit chaque
-                    année des chercheurs et praticiens pour explorer les avancées dans le domaine de la logistique
-                    et du
-                    management de la distribution. Cet événement vise à confronter les visions académiques et
-                    pratiques
-                    afin d'améliorer la performance logistique à travers des innovations dans la gestion des flux et
-                    de
-                    la distribution.</article>
+                    Le Colloque International 'Territoire et Développement Économique' explore les interactions entre
+                    les dynamiques territoriales et le développement économique à travers une approche
+                    multidimensionnelle. Cet événement réunit chercheurs, praticiens, et décideurs pour échanger autour
+                    des défis contemporains de la gouvernance territoriale, de l'attractivité et de la compétitivité,
+                    ainsi que des enjeux de l'économie informelle et durable.</article>
                 <button class="btn__2">Appel à communication <i class="fa-solid fa-arrow-right"></i></button>
                 <button class="btn__3">Programme de l'événement <i class="fa-solid fa-arrow-right"></i></button>
             </section>
         </div>
 
     </div>
-    <!-- _____________________________________________footer___________________________________________________ -->
+    <!-- ____________________________________________fOOTER _______________________________________________________ -->
     <footer class="footer" data-aos="fade-down">
         <hr>
         <div class="footer__parent">
@@ -156,18 +144,13 @@
         </div>
 
     </footer>
-    <button class="fa-solid fa-arrow-up" id="btnUp"></button>
-    <!-- ==============================================Script================================================= -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
-    <script src="../asset/js/cirlog.js"></script>
+    <!-- ____________________________________scripts_____________________________________________ -->
     <script src="../asset/js/script.js"></script>
+    <script src="../asset/js/colloques.js"> </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
 </body>
-
-
 
 </html>

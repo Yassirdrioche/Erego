@@ -21,6 +21,8 @@
   padding: 0;
 }
 body {
+  display: grid;
+  place-items: center;
   font-family: Merriweather;
   overflow-x: hidden;
 }
@@ -115,11 +117,25 @@ header {
   transition: var(--transition-all);
 }
 
-#semini ul {
+#semini > ul {
   display: none;
   background: #fff;
   width: 100%;
   margin-left: 0.4rem;
+  transition: var(--transition-all);
+  animation: fade 0.5s ease alternate;
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+    max-height: 0;
+    transition: var(--transition-all);
+  }
+  100% {
+    opacity: 1;
+    max-height: 31.25rem;
+    transition: var(--transition-all);
+  }
 }
 
 #semini:hover ul {
@@ -911,6 +927,7 @@ footer {
   flex-shrink: 0;
   background: var(--Primary-dark-blue--1);
   position: relative;
+  margin-top: 6rem;
 }
 footer hr {
   position: absolute;
