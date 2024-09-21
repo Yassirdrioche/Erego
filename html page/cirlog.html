@@ -94,7 +94,7 @@
 
     </header>
     <!-- -----------------------------------------------Hero Section----------------------------------------------------- -->
-    <div class="hero__parent">
+    <div class="hero__parent" data-aos="fade-up">
         <main class="hero__child">
             <section class="hero__title">CIRLOG</section>
             <section class="hero__description">Colloque international sur la recherche en logistique</section>
@@ -102,54 +102,65 @@
     </div>
 
     <!-- __________________________________________SWIPER____________________________________________________ -->
-    <main class="swiper__container">
-        <div class="swiper mySwiper" id="Swiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div><img src="../picture/card-act1.png" alt="" class="first-slide"></div>
-                </div>
-                <div class="swiper-slide">
-                    <div style="margin-left: -12rem;"><img src="../picture/cirlogHeroSection.png" alt=""> </div>
-                </div>
-                <div class="swiper-slide">
-                    <div style="margin-left:0rem;"><img src="../picture/cirlog3.jpeg" alt=""></div>
-                </div>
-                <div class="swiper-slide">
-                    <div style="margin-left: 12rem;"><img src="../picture/cirlog4.jpeg" alt=""></div>
-                </div>
-                <div class="swiper-slide">
-                    <div style="margin-left: 24rem;"><img src="../picture/cirlog5.jpeg" alt=""></div>
-                </div>
-                <div class="swiper-slide">
-                    <div style="margin-left: 36rem;"><img src="../picture/cirlog6.jpeg" alt=""></div>
-                </div>
-                <div class="swiper-slide">
-                    <div style="margin-left:50rem;"><img src="../picture/cirlog7.jpeg" alt=""></div>
-                </div>
-            </div>
+    <swiper-container data-aos="fade-up" class="mySwiper" space-between=" 30" slides-per-view="auto" pagination="true"
+        pagination-clickable="true" navigation="true">
+        <swiper-slide></swiper-slide>
+        <swiper-slide></swiper-slide>
+        <swiper-slide></swiper-slide>
+        <swiper-slide></swiper-slide>
+    </swiper-container>
+
+    <!-- ______________________________________________cirlog Last Section________________________________________ -->
+    <div class="cirlog__last__parent" data-aos="fade-up">
+        <div class="cirlog__last__child">
+            <section class="cirlog__last__items1"></section>
+            <section class="cirlog__last__items2">
+                <article class="item1">
+                    Le Colloque International sur la Recherche en Logistique (CIRLOG) réunit chaque
+                    année des chercheurs et praticiens pour explorer les avancées dans le domaine de la logistique et du
+                    management de la distribution. Cet événement vise à confronter les visions académiques et pratiques
+                    afin d'améliorer la performance logistique à travers des innovations dans la gestion des flux et de
+                    la distribution.</article>
+                <button class="btn__2">Appel à communication <i class="fa-solid fa-arrow-right"></i></button>
+                <button class="btn__3">Programme de l'événement <i class="fa-solid fa-arrow-right"></i></button>
+            </section>
         </div>
-    </main>
 
+    </div>
+    <!-- _____________________________________________footer___________________________________________________ -->
+    <footer class="footer" data-aos="fade-down">
+        <hr>
+        <div class="footer__parent">
+            <section class="footer__part1">
+                <article class="footer__title">EREGO</article>
+                <article class="footer__sous__title">
+                    <aside class="sous__title1">FSJES - Ait Melloul</aside>
+                    <aside class="sous__title2"></aside>
+                </article>
 
+            </section>
+
+            <section class="footer__part2">
+                <article class="footer__copyright">Copyright © 2024 EREGO | All Rights Reserved </article>
+                <article class="footer__social__icon">
+                    <a target="_blank" href="#"> <img loading="lazy" src="../picture/Facebook.png" alt=""></a>
+                    <a target="_blank" href="#"> <img loading="lazy" src="../picture/Instagram.png" alt=""></a>
+                    <a target="_blank" href="#"> <img loading="lazy" src="../picture/Linkden.png" alt=""></a>
+                </article>
+            </section>
+
+        </div>
+
+    </footer>
+    <button class="fa-solid fa-arrow-up" id="btnUp"></button>
     <!-- ==============================================Script================================================= -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     <script src="../asset/js/cirlog.js"></script>
+    <script src="../asset/js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 3,
-            spaceBetween: 20,
-
-
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-
-            },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-        });
+        AOS.init();
     </script>
 </body>
 

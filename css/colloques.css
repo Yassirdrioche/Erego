@@ -2,6 +2,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Poppins:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Rajdhani:wght@300;400;500;600;700&display=swap");
 :root {
   --transition-all: all 0.3s ease;
+  --Primary-lightblue---1: #1dabd9;
+  --Primary-lightblue---2: #4abce1;
+  --Primary-lightblue---3: #77cde8;
+  --Primary-lightblue---4: #bbe6f4;
+  --Primary-lightblue---5: #e8f7fb;
+  --Primary-dark-blue--1: #113668;
+  --Primary-dark-blue--2: #315484;
+  --Primary-dark-blue--3: #50729f;
+  --Primary-dark-blue--4: #708fbb;
+  --Primary-dark-blue--5: #8fadd6;
+  --Neutral-Colors-White: #fff;
 }
 * {
   box-sizing: border-box;
@@ -365,61 +376,96 @@ header {
 }
 /* ===================================================footer===================================== */
 footer {
-  width: 100%;
-  bottom: 0;
-  height: 18em;
-  background: #113668;
-  padding-inline: 4rem;
-  padding-block: 5rem;
-  margin-top: 6rem;
+  display: flex;
+  width: 90rem;
+  height: 21.25rem;
+  padding: 4.0625rem 4.5rem 6rem 4.5rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-shrink: 0;
+  background: var(--Primary-dark-blue--1);
+  position: relative;
 }
-.footer-title,
-.footer-sous-title {
-  color: white;
+footer hr {
+  position: absolute;
+  top: 11.21875rem;
+  width: 90.00138rem;
+  height: 0.00125rem;
+  background: #fff;
 }
-.footer-title {
-  font-size: 1.89rem;
+
+.footer__parent {
+  display: flex;
+  width: 66.625rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 4rem;
+}
+.footer__part1 {
+  display: flex;
+  height: 4.4375rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: -0.58225rem;
+  flex: 1 0 0;
+  margin-left: 3rem;
+}
+.footer__part1 .footer__title {
+  color: var(--Neutral-Colors-White);
+  align-self: stretch;
+  font-family: Merriweather;
+  font-size: 2.5rem;
   font-style: normal;
-  font-weight: 700; /* 45.513px */
-  text-align: start;
+  font-weight: 700;
+  line-height: 150%;
+  position: relative;
 }
-.footer-sous-title {
+.footer__title::before {
+  content: url("../picture/footerVector.png");
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: -2.7rem;
+}
+.footer__part1 .footer__sous__title {
+  color: #fff;
+  width: 8.0625rem;
+  text-align: center;
   font-family: Poppins;
-  font-size: 0.669rem;
+  font-size: 0.875rem;
   font-style: normal;
-  margin-top: -0.4rem;
+  font-weight: 500;
+  line-height: 150%;
 }
-.footer-flex {
+.footer__part2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 2.3rem;
+  align-self: stretch;
 }
-.a__icon {
+.footer__copyright {
+  color: var(--Neutral-Colors-White);
+  text-align: center;
+  font-family: Merriweather;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.footer__social__icon {
   display: flex;
-  gap: 0.9rem;
+  width: 8.75rem;
   justify-content: center;
   align-items: center;
-}
-.a__icon a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-.copyright {
-  color: #fff;
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+  gap: 1rem;
 }
 .fa-arrow-up {
   position: fixed;
   padding: 0.4rem;
-  background: #79a8d8;
+  background: var(--Primary-lightblue---2);
   color: hsl(0, 3%, 12%);
   border-radius: 50%;
   bottom: 0;
@@ -429,33 +475,4 @@ footer {
   border: none;
   font-weight: bold;
   font-size: 1rem;
-}
-/* ===================================swiper ============================================= */
-.swiper {
-  width: 800px;
-  height: auto;
-  box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1);
-  border-radius: 1.2rem;
-}
-
-.swiper-slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 24px;
-  background-color: #eeeeee;
-  padding: 3rem;
-}
-
-.swiper-button-next {
-  color: black;
-}
-
-.swiper-button-prev {
-  color: black;
-}
-
-.swiper-pagination {
-  /* background: #3982a7; */
-  color: rgb(0, 0, 0);
 }
