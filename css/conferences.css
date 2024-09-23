@@ -155,7 +155,7 @@ header {
   position: relative;
 }
 #semini > ul a li::after {
-  content: url("../../svg/navbar2.svg");
+  content: url("../svg/navbar2.svg");
   position: absolute;
   transform: scale(0) translate(50%, -50%);
   margin-right: 5rem;
@@ -175,7 +175,7 @@ header {
   position: relative;
 }
 #semini > li label::after {
-  content: url("../../svg/navbar.svg");
+  content: url("../svg/navbar.svg");
   position: absolute;
   transition: var(--transition-all);
   right: 0.92075rem;
@@ -209,7 +209,7 @@ header {
   position: relative;
 }
 .show-style a li::after {
-  content: url("../../svg/navbar.svg");
+  content: url("../svg/navbar.svg");
   position: absolute;
   right: 2rem;
   transform: scale(0);
@@ -247,11 +247,10 @@ header {
 }
 .hero__child {
   display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  justify-content: end;
-  background: linear-gradient(to bottom, #00000000, #fffffff2, #ffffff),
-    url("../../picture/smrHeroSection.png");
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, #00000000, #ffffffe1, #ffffff),
+    url("../picture/confrenceHeroSection.png");
   background-size: 100% 100%;
   width: 66.75rem;
   height: 35.875rem;
@@ -266,59 +265,146 @@ header {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  align-self: center;
+  margin-top: 20rem;
+}
+/*________________________________swiper
+  smr_____________________________
+  */
+.swiper-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper {
+  width: 1000px;
+  height: 30rem;
+  overflow: hidden;
+  gap: 4rem;
 }
 
-.hero__sous__title {
-  color: var(--Primary-dark-blue--3, #50729f);
-  text-align: center;
-  /* H3-bold-700 */
-  font-family: Merriweather;
-  font-size: 2.125rem;
+.swiper-slide {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+  border-radius: 0.6rem;
+  background-repeat: no-repeat;
+  cursor: grab;
+  transition: all 0.3s ease;
+  background: transparent;
+}
+.swiper-slide:hover {
+  box-shadow: 0rem 2.4375rem 5.3125rem 0px rgba(0, 0, 0, 0.08);
+}
+.swiper-slide:hover .swiper-text {
+  background: var(--Primary-lightblue---4, #bbe6f4);
+}
+.swip__slide__1 {
+  background: url("../picture/cnf__card__1.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.swip__slide__2 {
+  background: url("../picture/cnf__card__2.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.swip__slide__3 {
+  background: url("../picture/cnf__card__3.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.swip__slide__4 {
+  background: url("../picture/cnf__card__4.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.swiper-text {
+  display: flex;
+  height: 13rem;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-shrink: 0;
+  border-radius: 0.5rem;
+  bottom: 0;
+  position: fixed;
+  background: var(--Primary-lightblue---5, #e8f7fb);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.swip-title {
+  color: var(--Primary-dark-blue--4, #708fbb);
+  font-family: Poppins;
+  font-size: 0.83313rem;
   font-style: normal;
-  font-weight: 700;
-  line-height: 135%; /* 2.86875rem */
-}
-/* ____________________________________swiper smr_____________________________ */
-swiper-container {
-  display: flex;
-  width: 90rem;
-  padding: 0rem 11.0625rem;
-  justify-content: center;
-  align-items: center;
-  cursor: grabbing;
-  margin-top: 6rem;
+  font-weight: 500;
+  line-height: normal;
+  margin-left: 1.2rem;
 }
 
-swiper-slide {
+.swip-desc {
+  align-self: stretch;
+  color: var(--Primary-dark-blue--1, #113668);
+  /* Paragraph-Med-500 */
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 1*/
+  margin-left: 1.2rem;
+  width: 17rem;
+}
+
+.swip-link {
+  color: var(--Primary-lightblue---1, #1dabd9);
   text-align: center;
-  font-size: 18px;
-  background: #fff;
+  font-family: Merriweather;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 1.2rem;
+}
+.swiper-btn-next {
+  background-color: #0a2549;
+  color: white;
+}
+.Axe-publications-link {
+  color: var(--Primary-lightblue---1, #1dabd9);
+  text-align: center;
+  font-family: Merriweather;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
   display: flex;
+  transition: all 0.3s ease;
+}
+.Axe-publications-link:hover {
+  color: #7fcee9;
+}
+.Axe-publications-link svg {
+  display: flex;
+  width: 1.25rem;
+  height: 1.25rem;
+  padding: 0.18431rem 0.15625rem;
   justify-content: center;
   align-items: center;
+  transition: all 0.3s ease;
+  margin-left: 0.5rem;
 }
-
-swiper-slide:nth-child(1) {
-  background: url("../../picture/card-act-9.png");
-  background-size: 100%;
-  width: 20.375rem;
-  height: 28.6875rem;
-  object-fit: cover;
-  border-radius: 0.5rem;
-  background-repeat: no-repeat;
+.Axe-publications-link:hover svg {
+  transform: translate(0.2rem);
 }
-
-swiper-slide:nth-child(2) {
-  background: url("../../picture/sem4.png");
-  background-size: 100%;
-  width: 43.75rem;
-  height: 28.6875rem;
-  object-fit: cover;
-  border-radius: 0.5rem;
-  background-repeat: no-repeat;
+.Axe-publications-link:hover svg #Line,
+#Line_2 {
+  stroke: #7fcee9;
 }
-
 /* ______________________________________FOOTER____________________________ */
 footer {
   display: flex;
@@ -370,7 +456,7 @@ footer hr {
   position: relative;
 }
 .footer__title::before {
-  content: url("../../picture/footerVector.png");
+  content: url("../picture/footerVector.png");
   position: absolute;
   top: 0;
   left: 0;

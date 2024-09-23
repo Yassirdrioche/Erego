@@ -155,7 +155,7 @@ header {
   position: relative;
 }
 #semini > ul a li::after {
-  content: url("../../svg/navbar2.svg");
+  content: url("../svg/navbar2.svg");
   position: absolute;
   transform: scale(0) translate(50%, -50%);
   margin-right: 5rem;
@@ -175,7 +175,7 @@ header {
   position: relative;
 }
 #semini > li label::after {
-  content: url("../../svg/navbar.svg");
+  content: url("../svg/navbar.svg");
   position: absolute;
   transition: var(--transition-all);
   right: 0.92075rem;
@@ -209,7 +209,7 @@ header {
   position: relative;
 }
 .show-style a li::after {
-  content: url("../../svg/navbar.svg");
+  content: url("../svg/navbar.svg");
   position: absolute;
   right: 2rem;
   transform: scale(0);
@@ -251,7 +251,7 @@ header {
   gap: 1.5rem;
   justify-content: end;
   background: linear-gradient(to bottom, #00000000, #fffffff2, #ffffff),
-    url("../../picture/smrHeroSection.png");
+    url("../picture/smrdctxHero.png");
   background-size: 100% 100%;
   width: 66.75rem;
   height: 35.875rem;
@@ -272,54 +272,38 @@ header {
 .hero__sous__title {
   color: var(--Primary-dark-blue--3, #50729f);
   text-align: center;
-  /* H3-bold-700 */
-  font-family: Merriweather;
-  font-size: 2.125rem;
+  font-family: Poppins;
+  font-size: 1rem;
   font-style: normal;
-  font-weight: 700;
-  line-height: 135%; /* 2.86875rem */
+  font-weight: 500;
+  line-height: 150%;
+  align-self: stretch;
 }
-/* ____________________________________swiper smr_____________________________ */
-swiper-container {
+/* ____________________________________________sous Hero _____________________________________ */
+.sous__hero {
   display: flex;
   width: 90rem;
-  padding: 0rem 11.0625rem;
-  justify-content: center;
+  padding: 3rem 0rem;
+  flex-direction: column;
   align-items: center;
-  cursor: grabbing;
-  margin-top: 6rem;
+  justify-content: center;
+  gap: 3rem;
 }
 
-swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
+.sous__hero__child {
   display: flex;
-  justify-content: center;
   align-items: center;
+  gap: 2.5rem;
 }
-
-swiper-slide:nth-child(1) {
-  background: url("../../picture/card-act-9.png");
-  background-size: 100%;
+.sous__hero__child img {
+  display: flex;
   width: 20.375rem;
   height: 28.6875rem;
-  object-fit: cover;
-  border-radius: 0.5rem;
-  background-repeat: no-repeat;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
-swiper-slide:nth-child(2) {
-  background: url("../../picture/sem4.png");
-  background-size: 100%;
-  width: 43.75rem;
-  height: 28.6875rem;
-  object-fit: cover;
-  border-radius: 0.5rem;
-  background-repeat: no-repeat;
-}
-
-/* ______________________________________FOOTER____________________________ */
+/* _______________________________________________footer__________________________________________ */
 footer {
   display: flex;
   width: 90rem;
@@ -370,7 +354,7 @@ footer hr {
   position: relative;
 }
 .footer__title::before {
-  content: url("../../picture/footerVector.png");
+  content: url("../picture/footerVector.png");
   position: absolute;
   top: 0;
   left: 0;

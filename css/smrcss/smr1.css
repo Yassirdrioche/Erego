@@ -257,6 +257,7 @@ header {
   height: 35.875rem;
   flex-shrink: 0;
   border-radius: 0.5rem;
+  background-repeat: no-repeat;
 }
 .hero__title {
   color: var(--Primary-dark-blue--1);
