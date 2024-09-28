@@ -4,11 +4,151 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../svg/Erego.svg" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/jdcss/jd2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <title>Journées Doctorales</title>
 </head>
 
 <body>
+    <header class="header-container">
+        <section class="header-section">
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="61" viewBox="0 0 28 61" fill="none">
+                    <path
+                        d="M8.53252 20.857C9.48053 9.95446 18.3815 3.79218 24.1749 0C17.5389 7.11033 12.726 14.2923 11.8507 20.857C10.9026 27.9673 14.0627 36.9737 15.6428 41.2399C13.273 38.8698 7.58451 31.7595 8.53252 20.857Z"
+                        fill="#113668" />
+                    <path
+                        d="M18.9609 8.05836C17.0648 9.63844 13.1899 16.5908 12.4314 22.279C11.4834 29.3894 17.1716 38.8698 16.6976 45.0321C16.2977 50.231 15.2756 56.8826 12.4314 60.2008C17.6457 55.4606 19.9484 50.2181 20.4898 45.0321C21.331 36.9737 18.4869 35.0776 17.0648 28.4413C15.8689 22.86 16.1168 11.8505 18.9609 8.05836Z"
+                        fill="#1DABD9" />
+                    <path
+                        d="M24.6491 22.3315C23.8618 20.3633 21.489 20.2774 19.9089 20.4354C20.857 20.9094 22.7531 21.3834 21.805 24.7016C20.779 28.2927 6.32029 33.234 0 34.6561C2.2121 34.34 8.05837 33.234 14.6947 31.3379C22.6546 29.0636 25.5972 24.7016 24.6491 22.3315Z"
+                        fill="#113668" />
+                    <path
+                        d="M27.4933 27.0717C26.706 25.1035 24.3332 25.0177 22.7531 25.1757C23.7012 25.6497 25.5973 26.1237 24.6492 29.4418C23.6232 33.033 9.16449 37.9742 2.8442 39.3963C5.0563 39.0803 10.9026 37.9742 17.5389 36.0781C25.4988 33.8039 28.4414 29.4418 27.4933 27.0717Z"
+                        fill="#113668" />
+                </svg>
+            </div>
 
+            <div class="header-logo">
+                <div class="header-title">EREGO</div>
+                <div class="header-sous-title">FSJES - Ait Melloul</div>
+            </div>
+        </section>
+        <section class="section-nav">
+            <ul>
+                <a href="../../index.html">
+                    <li>Accueil</li>
+                </a>
+                <a href="../../html page/about.html">
+                    <li>
+                        À propos de nous
+                    </li>
+                </a>
+                <div class="container-drop">
+                    <li id="drop-down" class="drop-down">Journées doctorales<i class="fa-solid fa-angle-up rotate"
+                            id="angledown"></i> </li>
+
+                    <div id="drop-items" class="show show-style">
+                        <a href="../colloques.html">
+                            <li>Colloques</li>
+                        </a>
+
+                        <label id="semini">
+                            <li><label>Séminaires et conferences</label></li>
+                            <ul> <a href="../smr.html">
+                                    <li>Séminaires d’EREGO</li>
+                                </a>
+
+                                <a href="../smrdctrx.html">
+                                    <li>Séminaire Doctorales</li>
+                                </a>
+                                <a href="../conferences.html">
+                                    <li>conférences</li>
+                                </a>
+                            </ul>
+
+                        </label>
+                        <a href="../smrdctrx.html">
+                            <li>Journées doctorales</li>
+                        </a>
+                        <a href="../autres.html">
+                            <li>Autres</li>
+                        </a>
+                    </div>
+
+                </div>
+
+                <a href="../publications.html">
+                    <li>Publications</li>
+                </a>
+
+            </ul>
+        </section>
+
+    </header>
+    <!-- ________________________________________________SMR hero Section _____________________________________________________ -->
+    <section class="hero__parent">
+        <aside class="hero__child">
+            <article class="hero__title">Journées doctorales</article>
+            <article class="hero__sous__title">
+                <p> Writing e publishing a research article :</p>
+
+                practical strategies
+            </article>
+        </aside>
+    </section>
+
+    <!-- ______________________________swiper smr __________________________________ -->
+    <swiper-container data-aos="fade-up" class="mySwiper" space-between=" 30" slides-per-view="auto" pagination="true"
+        pagination-clickable="true" navigation="true">
+        <swiper-slide data-aos="fade-right"></swiper-slide>
+        <swiper-slide data-aos="fade-left"></swiper-slide>
+        <swiper-slide data-aos="fade-left"></swiper-slide>
+    </swiper-container>
+
+    <!-- _____________________________FOOTER_______________________________________ -->
+    <footer class="footer" data-aos="fade-down">
+        <hr>
+        <div class="footer__parent">
+            <section class="footer__part1">
+                <article class="footer__title">EREGO</article>
+                <article class="footer__sous__title">
+                    <aside class="sous__title1">FSJES - Ait Melloul</aside>
+                    <aside class="sous__title2"></aside>
+                </article>
+
+            </section>
+
+            <section class="footer__part2">
+                <article class="footer__copyright">Copyright © 2024 EREGO | All Rights Reserved </article>
+                <article class="footer__social__icon">
+                    <a target="_blank" href="#"> <img loading="lazy" src="../../picture/Facebook.png" alt=""></a>
+                    <a target="_blank" href="#"> <img loading="lazy" src="../../picture/Instagram.png" alt=""></a>
+                    <a target="_blank" href="#"> <img loading="lazy" src="../../picture/Linkden.png" alt=""></a>
+                </article>
+            </section>
+
+        </div>
+
+    </footer>
+    <button class="fa-solid fa-arrow-up" id="btnUp"></button>
+    <!-- ______________________________________Script__________________________________________________________ -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script src="../../asset/js/script.js"></script>
+    <script src="../../asset/js/index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
