@@ -38,7 +38,7 @@
                 <div class="header-sous-title">FSJES - Ait Melloul</div>
             </div>
         </section>
-        <section class="section-nav">
+        <section class="section-nav navToggle">
             <ul>
                 <a href="../index.html">
                     <li>Accueil</li>
@@ -59,7 +59,7 @@
                         </a>
 
                         <label id="semini">
-                            <li><label>Séminaires et conferences</label></li>
+                            <li><label class="label">Séminaires et conferences</label></li>
                             <ul> <a href="./smr.html">
                                     <li>Séminaires d’EREGO</li>
                                 </a>
@@ -86,10 +86,13 @@
                 <a href="./publications.html">
                     <li>Publications</li>
                 </a>
-
+                <button class="button_hidde" onclick="showHide()"> <i class="fa-solid fa-xmark"></i></button>
             </ul>
         </section>
+        <div class="bars">
+            <div class="fa-solid fa-bars bars" onclick="showHide()"></div>
 
+        </div>
     </header>
     <!-- =======================================About hero Section======================================== -->
 
@@ -123,11 +126,11 @@
     <!-- ====================================================About-sous-hero============================================================================ -->
     <div class="main-parent">
         <main class="main-child">
-            <div class="notre-mession" data-aos="zoom-out-up">Notre mession</div>
+            <div class="notre-mession" data-aos="fade-up">Notre mession</div>
             <section class="main-container">
                 <main class="main-sous-hero">
                     <article class="article1"></article>
-                    <article class="article2">Notre mission est de contribuer à la promotion d'une recherche
+                    <article class="article2 article1_2">Notre mission est de contribuer à la promotion d'une recherche
                         rigoureuse et innovante en sciences économiques et de gestion, en réponse aux enjeux
                         contemporains.
                         Nous
@@ -141,13 +144,13 @@
 
         </main>
         <!-- ================================================nos valeur ================================ -->
-        <main class="main-child">
+        <main class="main-child main-child2">
             <div class="notre-mession" data-aos="zoom-out-up">Nos Valeurs</div>
             <section class="main-container">
 
                 <main class="main-sous-hero">
-                    <article class="article1 article__1" style="order: 2;"></article>
-                    <article class="article2">À l'EREGO, nous valorisons l'excellence, l'innovation, et la
+                    <article class="article1 article__1 " style="order: 2;"></article>
+                    <article class="article2 article_2">À l'EREGO, nous valorisons l'excellence, l'innovation, et la
                         collaboration. Notre approche pluridisciplinaire nous permet de traiter les défis complexes avec
                         une
                         perspective globale, en intégrant divers champs de connaissances pour proposer des solutions
