@@ -20,8 +20,6 @@
   padding: 0;
 }
 body {
-  display: grid;
-  place-items: center;
   font-family: Merriweather;
   overflow-x: hidden;
 }
@@ -238,11 +236,13 @@ header {
 
 /* ===========================================Hero Section ====================================== */
 .hero-section-container {
-  display: flex;
+  display: grid;
+  place-items: center;
   justify-content: center;
+  align-items: center;
   width: 100%;
-  padding: 2rem;
-  margin-top: 10rem;
+  margin: 0 auto;
+  margin-top: 8rem;
 }
 .hero-section {
   background: linear-gradient(to bottom, #00000017, #faf5f5d5, #ffffff),

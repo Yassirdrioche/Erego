@@ -20,8 +20,6 @@
   padding: 0;
 }
 body {
-  display: grid;
-  place-items: center;
   font-family: Merriweather;
   overflow-x: hidden;
 }
