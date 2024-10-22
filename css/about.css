@@ -799,7 +799,7 @@ footer hr {
     ); /* Smaller minimum width for smaller screens */
   }
   .team-container {
-    margin-left: -32.5rem;
+    margin-left: -32rem;
   }
   .doctor__last {
     transform: translateX(0%);
