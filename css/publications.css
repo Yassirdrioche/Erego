@@ -39,7 +39,8 @@ header {
 .header-container {
   padding: 1rem;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  gap: 20.75rem;
   align-items: center;
   width: 100%;
   background: #ffffff;
@@ -235,7 +236,7 @@ header {
 /* ________________________________Smr Hero Section_______________________ */
 .hero__parent {
   display: flex;
-  width: 90rem;
+  width: 100%;
   padding: 6rem 0.5rem;
   flex-direction: column;
   justify-content: center;
@@ -410,25 +411,189 @@ header {
 #Line_2 {
   stroke: #7fcee9;
 }
+/* _____________________________Ouvrage_______________________________ */
+.ouvrage__title {
+  color: var(--Primary-dark-blue--1, #113668);
+  font-family: Merriweather;
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  align-self: stretch;
+  width: 100%;
+}
+pre {
+  font-family: Merriweather;
+  font-size: 1.75rem;
+}
+.ouvrage__container {
+  display: flex;
+  gap: 3rem;
+  margin: 6rem auto 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 90rem;
+}
+/* ________________________ouvrage1_____________________  */
+.ouvrage__parent {
+  display: flex;
+  width: 100%;
+  max-width: 90rem;
+  padding: 0rem 0.5rem 6rem 0.5rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.ouvrage__child {
+  display: flex;
+  width: 66.75rem;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+.ouvrage__items1 {
+  background: url("../picture/ouvrage1.png");
+  width: 32.5rem;
+  height: 23.4375rem;
+  flex-shrink: 0;
+  border-radius: 0.5rem;
+}
+.ouvrage__items2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: start;
+  gap: 1.25rem;
+  flex: 1 0 0;
+}
+.ouvrage__items2 .item1 {
+  color: var(--Primary-dark-blue--3);
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+}
+.btn__2 i {
+  transform: scale(1);
+}
+.btn__3 i {
+  transform: scale(1);
+}
+.btn__2 {
+  display: inline-flex;
+  padding: 1.25rem 2rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 0.5rem;
+  background: var(--Primary-lightblue---1);
+  color: var(--Neutral-Colors-White);
+  text-align: center;
+  font-family: Merriweather;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border: none;
+  transition: var(--transition-all);
+}
+.btn__2:hover {
+  gap: 0.75rem;
+  background: var(--Primary-lightblue---3);
+}
+.btn__2:active {
+  background: var(--Primary-dark-blue--2);
+}
+.btn__3 {
+  display: inline-flex;
+  padding: 0rem 1.25rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 0.5rem;
+  background: var(--Neutral-Colors-White);
+  color: var(--Primary-lightblue---1);
+  text-align: center;
+  font-family: Merriweather;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border: none;
+  transition: var(--transition-all);
+}
+.btn__3:hover {
+  gap: 0.75rem;
+  color: var(--Primary-lightblue---3);
+}
+.btn__3:active {
+  color: var(--Primary-dark-blue--2);
+}
+/* ________________________________Ouvrage2________________________ */
+.ouvrage2__parent {
+  display: flex;
+  width: 100%;
+  max-width: 90rem;
+  padding: 0rem 0.5rem 6rem 0.5rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.ouvrage__child2 {
+  display: flex;
+  width: 66.75rem;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+.ouvrage2__items1 {
+  background: url("../picture/ouvrage2.png");
+  width: 32.5rem;
+  height: 23.4375rem;
+  flex-shrink: 0;
+  border-radius: 0.5rem;
+}
+.ouvrage2__items2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.25rem;
+  flex: 1 0 0;
+}
+.ouvrage2__items2 .item1 {
+  align-self: stretch;
+  color: var(--Primary-dark-blue--3);
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+}
 /* ______________________________________FOOTER____________________________ */
 footer {
   display: flex;
-  width: 90rem;
+  width: 100%;
   height: 21.25rem;
   padding: 4.0625rem 4.5rem 6rem 4.5rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  flex-shrink: 0;
   background: var(--Primary-dark-blue--1);
   position: relative;
   margin-top: 6rem;
+  max-width: 1300px; /* or any suitable value */
+  margin: 6rem auto 0 auto; /* centers the footer */
 }
 footer hr {
   position: absolute;
   top: 11.21875rem;
-  width: 90.00138rem;
+  width: 95%;
   height: 0.00125rem;
   background: #fff;
 }

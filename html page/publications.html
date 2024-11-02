@@ -1,236 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../svg/Erego.svg" type="image/x-icon" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/publications.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <title>Publications</title>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="../svg/Erego.svg" type="image/x-icon">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/publications.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <title>
-        Publications
-    </title>
-</head>
-
-
-<body>
+  <body>
     <header class="header-container">
-        <section class="header-section">
-            <div>
-                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="61" viewBox="0 0 28 61" fill="none">
-                    <path
-                        d="M8.53252 20.857C9.48053 9.95446 18.3815 3.79218 24.1749 0C17.5389 7.11033 12.726 14.2923 11.8507 20.857C10.9026 27.9673 14.0627 36.9737 15.6428 41.2399C13.273 38.8698 7.58451 31.7595 8.53252 20.857Z"
-                        fill="#113668" />
-                    <path
-                        d="M18.9609 8.05836C17.0648 9.63844 13.1899 16.5908 12.4314 22.279C11.4834 29.3894 17.1716 38.8698 16.6976 45.0321C16.2977 50.231 15.2756 56.8826 12.4314 60.2008C17.6457 55.4606 19.9484 50.2181 20.4898 45.0321C21.331 36.9737 18.4869 35.0776 17.0648 28.4413C15.8689 22.86 16.1168 11.8505 18.9609 8.05836Z"
-                        fill="#1DABD9" />
-                    <path
-                        d="M24.6491 22.3315C23.8618 20.3633 21.489 20.2774 19.9089 20.4354C20.857 20.9094 22.7531 21.3834 21.805 24.7016C20.779 28.2927 6.32029 33.234 0 34.6561C2.2121 34.34 8.05837 33.234 14.6947 31.3379C22.6546 29.0636 25.5972 24.7016 24.6491 22.3315Z"
-                        fill="#113668" />
-                    <path
-                        d="M27.4933 27.0717C26.706 25.1035 24.3332 25.0177 22.7531 25.1757C23.7012 25.6497 25.5973 26.1237 24.6492 29.4418C23.6232 33.033 9.16449 37.9742 2.8442 39.3963C5.0563 39.0803 10.9026 37.9742 17.5389 36.0781C25.4988 33.8039 28.4414 29.4418 27.4933 27.0717Z"
-                        fill="#113668" />
-                </svg>
-            </div>
-
-            <div class="header-logo">
-                <div class="header-title">EREGO</div>
-                <div class="header-sous-title">FSJES - Ait Melloul</div>
-            </div>
-        </section>
-        <section class="section-nav">
-            <ul>
-                <a href="../index.html">
-                    <li>Accueil</li>
-                </a>
-                <a href="about.html">
-                    <li>
-                        À propos de nous
-                    </li>
-                </a>
-                <div class="container-drop">
-                    <li id="drop-down" class="drop-down">Autres<i class="fa-solid fa-angle-up rotate"
-                            id="angledown"></i> </li>
-
-                    <div id="drop-items" class="show show-style">
-                        <a href="colloques.html">
-                            <li>Colloques</li>
-                        </a>
-
-                        <label id="semini">
-                            <li><label>Séminaires et conferences</label></li>
-                            <ul> <a href="./smr.html">
-                                    <li>Séminaires d’EREGO</li>
-                                </a>
-
-                                <a href="./smrdctrx.html">
-                                    <li>Séminaire Doctorales</li>
-                                </a>
-                                <a href="./conferences.html">
-                                    <li>conférences</li>
-                                </a>
-                            </ul>
-
-                        </label>
-                        <a href="./j-doctoral.html">
-                            <li>Journées doctorales</li>
-                        </a>
-                        <a href="./autres.html">
-                            <li>Autres</li>
-                        </a>
-                    </div>
-
-                </div>
-
-                <a href="./publications.html">
-                    <li>Publications</li>
-                </a>
-
-            </ul>
-        </section>
-
-    </header>
-    <!-- ________________________________________________SMR hero Section _____________________________________________________ -->
-    <section class="hero__parent">
-        <aside class="hero__child">
-            <article class="hero__title">Publications</article>
-            <article class="hero__sous__title">
-                <p> Les séminaires doctoraux représentent une série de séminaires organisés au profit des chercheurs et
-                    doctorants ainsi </p>
-                <p> que pour les étudiants de master. Les thématiques des séminaires s’orientent vers les
-                    préoccupations de cette cible soit </p>
-                <p> sur le volet académique ou de recherche. Des séminaires ont été
-                    organisés afin d’accompagner les jeunes doctorants et</p>
-                <p> chercheurs pour réussir leur thèse de doctorat
-                    soit sur le volet méthodologique, analyse de données ou de cadre</p>
-                <p> théorique ainsi que sur les
-                    opportunités de publications. Autres séminaires sont prévus afin de les accompagner dans</p>
-                <p> l’expérience de
-                    recherche.</p>
-
-            </article>
-        </aside>
-    </section>
-
-    <!-- ______________________________swiper smr __________________________________ -->
-    <section class="swiper-container" data-aos="fade-up">
-
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide swip__slide__1">
-                    <div class="swiper-text">
-                        <div class="swip-title">Séminaire</div>
-                        <div class="swip-desc">États d'avancement des doctorants de l'EREGO
-                        </div>
-                        <div class="swip-link" disabled><a href="#" class="Axe-publications-link">Savoire
-                                plus<svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16"
-                                    fill="none">
-                                    <g id="Arrow Right">
-                                        <path id="Line" d="M8.94922 0.949219L15.9999 7.99994L8.94922 15.0507"
-                                            stroke="#1DABD9" stroke-width="1.66667" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                        <path id="Line_2" d="M15.9999 8L1 8" stroke="#1DABD9" stroke-width="1.66667"
-                                            stroke-linecap="round" stroke-linejoin="round" />
-                                    </g>
-                                </svg></a></div>
-                    </div>
-                </div>
-
-
-                <!-- __________________________________________slide2________________________________ -->
-                <div class="swiper-slide swip__slide__2">
-                    <div class="swiper-text">
-                        <div class="swip-title">Séminaire</div>
-                        <div class="swip-desc">Comment assurer la cohérence méthodologique d'une thèse...
-                        </div>
-                        <div class="swip-link"><a href="#" class="Axe-publications-link">Savoire
-                                plus<svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16"
-                                    fill="none">
-                                    <g id="Arrow Right">
-                                        <path id="Line" d="M8.94922 0.949219L15.9999 7.99994L8.94922 15.0507"
-                                            stroke="#1DABD9" stroke-width="1.66667" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                        <path id="Line_2" d="M15.9999 8L1 8" stroke="#1DABD9" stroke-width="1.66667"
-                                            stroke-linecap="round" stroke-linejoin="round" />
-                                    </g>
-                                </svg></a></div>
-                    </div>
-                </div>
-                <!-- __________________________________________slide3________________________________ -->
-
-                <div class="swiper-slide swip__slide__3">
-                    <div class="swiper-text">
-                        <div class="swip-title">Séminaire</div>
-                        <div class="swip-desc">Réussir sa promotion dans la carrière d'enseignant-chercheur </div>
-                        <div class="swip-link"><a href="#" class="Axe-publications-link">Savoire
-                                plus<svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16"
-                                    fill="none">
-                                    <g id="Arrow Right">
-                                        <path id="Line" d="M8.94922 0.949219L15.9999 7.99994L8.94922 15.0507"
-                                            stroke="#1DABD9" stroke-width="1.66667" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                        <path id="Line_2" d="M15.9999 8L1 8" stroke="#1DABD9" stroke-width="1.66667"
-                                            stroke-linecap="round" stroke-linejoin="round" />
-                                    </g>
-                                </svg></a></div>
-                    </div>
-                </div>
-                <!-- __________________________________________slide4________________________________ -->
-
-                <!--  <div class="swiper-slide swip__slide__4"> -->
-                <!-- <div class="swiper-text"> -->
-                <!-- <div class="swip-title">Séminaire</div> -->
-                <!-- <div class="swip-desc">Les compétences de la réussite -->
-                <!-- universitaire</p> -->
-                <!-- </div> -->
-                <!-- <div class="swip-link"><a href="./seminairePage/smr4.html" class="Axe-publications-link">Savoire -->
-                <!-- Plus<svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" -->
-                <!-- fill="none"> -->
-                <!-- <g id="Arrow Right"> -->
-                <!-- <path id="Line" d="M8.94922 0.949219L15.9999 7.99994L8.94922 15.0507" -->
-                <!-- stroke="#1DABD9" stroke-width="1.66667" stroke-linecap="round" -->
-                <!-- stroke-linejoin="round" /> -->
-                <!-- <path id="Line_2" d="M15.9999 8L1 8" stroke="#1DABD9" stroke-width="1.66667" -->
-                <!-- stroke-linecap="round" stroke-linejoin="round" /> -->
-                <!-- </g> -->
-                <!-- </svg></a></div> -->
-                <!-- </div> -->
-                <!-- </div> -->
-            </div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+      <section class="header-section">
+        <div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="28"
+            height="61"
+            viewBox="0 0 28 61"
+            fill="none"
+          >
+            <path
+              d="M8.53252 20.857C9.48053 9.95446 18.3815 3.79218 24.1749 0C17.5389 7.11033 12.726 14.2923 11.8507 20.857C10.9026 27.9673 14.0627 36.9737 15.6428 41.2399C13.273 38.8698 7.58451 31.7595 8.53252 20.857Z"
+              fill="#113668"
+            />
+            <path
+              d="M18.9609 8.05836C17.0648 9.63844 13.1899 16.5908 12.4314 22.279C11.4834 29.3894 17.1716 38.8698 16.6976 45.0321C16.2977 50.231 15.2756 56.8826 12.4314 60.2008C17.6457 55.4606 19.9484 50.2181 20.4898 45.0321C21.331 36.9737 18.4869 35.0776 17.0648 28.4413C15.8689 22.86 16.1168 11.8505 18.9609 8.05836Z"
+              fill="#1DABD9"
+            />
+            <path
+              d="M24.6491 22.3315C23.8618 20.3633 21.489 20.2774 19.9089 20.4354C20.857 20.9094 22.7531 21.3834 21.805 24.7016C20.779 28.2927 6.32029 33.234 0 34.6561C2.2121 34.34 8.05837 33.234 14.6947 31.3379C22.6546 29.0636 25.5972 24.7016 24.6491 22.3315Z"
+              fill="#113668"
+            />
+            <path
+              d="M27.4933 27.0717C26.706 25.1035 24.3332 25.0177 22.7531 25.1757C23.7012 25.6497 25.5973 26.1237 24.6492 29.4418C23.6232 33.033 9.16449 37.9742 2.8442 39.3963C5.0563 39.0803 10.9026 37.9742 17.5389 36.0781C25.4988 33.8039 28.4414 29.4418 27.4933 27.0717Z"
+              fill="#113668"
+            />
+          </svg>
         </div>
 
+        <div class="header-logo">
+          <div class="header-title">EREGO</div>
+          <div class="header-sous-title">FSJES - Ait Melloul</div>
+        </div>
+      </section>
+      <section class="section-nav">
+        <ul>
+          <a href="../index.html">
+            <li>Accueil</li>
+          </a>
+          <a href="about.html">
+            <li>À propos de nous</li>
+          </a>
+          <div class="container-drop">
+            <li id="drop-down" class="drop-down">
+              Autres<i class="fa-solid fa-angle-up rotate" id="angledown"></i>
+            </li>
+
+            <div id="drop-items" class="show show-style">
+              <a href="colloques.html">
+                <li>Colloques</li>
+              </a>
+
+              <label id="semini">
+                <li><label>Séminaires et conferences</label></li>
+                <ul>
+                  <a href="./smr.html">
+                    <li>Séminaires d’EREGO</li>
+                  </a>
+
+                  <a href="./smrdctrx.html">
+                    <li>Séminaire Doctorales</li>
+                  </a>
+                  <a href="./conferences.html">
+                    <li>conférences</li>
+                  </a>
+                </ul>
+              </label>
+              <a href="./j-doctoral.html">
+                <li>Journées doctorales</li>
+              </a>
+              <a href="./autres.html">
+                <li>Autres</li>
+              </a>
+            </div>
+          </div>
+
+          <a href="./publications.html">
+            <li>Publications</li>
+          </a>
+        </ul>
+      </section>
+    </header>
+
+    <!-- ________________________________________________SMR hero Section _____________________________________________________ -->
+    <section class="hero__parent">
+      <aside class="hero__child">
+        <article class="hero__title">Publications</article>
+        <article class="hero__sous__title">
+          <p>
+            Les séminaires doctoraux représentent une série de séminaires
+            organisés au profit des chercheurs et doctorants ainsi
+          </p>
+          <p>
+            que pour les étudiants de master. Les thématiques des séminaires
+            s’orientent vers les préoccupations de cette cible soit
+          </p>
+          <p>
+            sur le volet académique ou de recherche. Des séminaires ont été
+            organisés afin d’accompagner les jeunes doctorants et
+          </p>
+          <p>
+            chercheurs pour réussir leur thèse de doctorat soit sur le volet
+            méthodologique, analyse de données ou de cadre
+          </p>
+          <p>
+            théorique ainsi que sur les opportunités de publications. Autres
+            séminaires sont prévus afin de les accompagner dans
+          </p>
+          <p>l’expérience de recherche.</p>
+        </article>
+      </aside>
+    </section>
+
+    <!-- ______________________________Publucations __________________________________ -->
+    <section class="ouvrage__container">
+      <div class="ouvrage__parent" data-aos="fade-up">
+        <div class="ouvrage__child">
+          <section class="ouvrage__items1"></section>
+          <section class="ouvrage__items2">
+            <article class="ouvrage__title">
+              <pre>Territoire et développement économique </pre>
+              <pre>Enjeux, et perspectives  pour le Maroc</pre>
+            </article>
+            <article class="item1">
+              <p>
+                Cette recherche analyse les facteurs d'attractivité des IDE dans
+              </p>
+              <p>
+                les PED, incluant la fiscalité, la main-d'œuvre, l'urbanisation,
+              </p>
+              <p>
+                le développement financier, la stabilité, l'ouverture
+                commerciale
+              </p>
+              <p>et la qualité institutionnelle, qui modère l'efficacité</p>
+              <p>économique.</p>
+            </article>
+            <button class="btn__2">
+              Télécharger l'ouvrage <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </section>
+        </div>
+      </div>
+      <div class="ouvrage_parent2" data-aos="fade-up">
+        <div class="ouvrage__child2">
+          <section class="ouvrage2__items2">
+            <article class="ouvrage__title">
+              <pre>LE MODÈLE COOPÉRATIF AGRICOLE</pre>
+              <pre>enjeux et stratégies</pre>
+            </article>
+            <article class="item1">
+              <p>
+                Les coopératives agricoles renforcent la durabilité et la
+                sécurité
+              </p>
+              <p>les alimentaire en soutenant l’accès aux marchés et en</p>
+              <p>
+                améliorant conditions de vie rurales. Elles favorisent la
+                résilience
+              </p>
+              <p>des communautés malgré certains défis, et un soutien</p>
+              <p>accru pourrait encore accroître leur impact.</p>
+            </article>
+            <button class="btn__2">
+              Télécharger l'ouvrage <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </section>
+          <section class="ouvrage2__items1"></section>
+        </div>
+      </div>
     </section>
 
     <!-- _____________________________FOOTER_______________________________________ -->
-    <footer class="footer" data-aos="fade-down">
-        <hr>
-        <div class="footer__parent">
-            <section class="footer__part1">
-                <article class="footer__title">EREGO</article>
-                <article class="footer__sous__title">
-                    <aside class="sous__title1">FSJES - Ait Melloul</aside>
-                    <aside class="sous__title2"></aside>
-                </article>
+    <footer class="footer">
+      <hr />
+      <div class="footer__parent">
+        <section class="footer__part1">
+          <article class="footer__title">EREGO</article>
+          <article class="footer__sous__title">
+            <aside class="sous__title1">FSJES - Ait Melloul</aside>
+            <aside class="sous__title2"></aside>
+          </article>
+        </section>
 
-            </section>
-
-            <section class="footer__part2">
-                <article class="footer__copyright">Copyright © 2024 EREGO | All Rights Reserved </article>
-                <article class="footer__social__icon">
-                    <a target="_blank" href="#"> <img loading="lazy" src="../picture/Facebook.png" alt=""></a>
-                    <a target="_blank" href="#"> <img loading="lazy" src="../picture/Instagram.png" alt=""></a>
-                    <a target="_blank" href="#"> <img loading="lazy" src="../picture/Linkden.png" alt=""></a>
-                </article>
-            </section>
-
-        </div>
-
+        <section class="footer__part2">
+          <article class="footer__copyright">
+            Copyright © 2024 EREGO | All Rights Reserved
+          </article>
+          <article class="footer__social__icon">
+            <a target="_blank" href="#">
+              <img loading="lazy" src="../picture/Facebook.png" alt=""
+            /></a>
+            <a target="_blank" href="#">
+              <img loading="lazy" src="../picture/Instagram.png" alt=""
+            /></a>
+            <a target="_blank" href="#">
+              <img loading="lazy" src="../picture/Linkden.png" alt=""
+            /></a>
+          </article>
+        </section>
+      </div>
     </footer>
     <button class="fa-solid fa-arrow-up" id="btnUp"></button>
     <!-- ______________________________________Script__________________________________________________________ -->
@@ -242,22 +233,21 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script>
-        AOS.init();
+      AOS.init();
     </script>
     <script>
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 3,
-            spaceBetween: 30,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-        });
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
     </script>
-</body>
-
+  </body>
 </html>
