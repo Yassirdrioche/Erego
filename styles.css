@@ -15,6 +15,34 @@
   --Primary-dark-blue--5: #8fadd6;
   --Neutral-Colors-White: #fff;
 }
+/* Custom scrollbar styles */
+::-webkit-scrollbar {
+  width: 0.7rem; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* Color of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #569ade;
+  /*Yourchosencolorforthescrollbarthumb*/
+  border-radius: 10px;
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #2a69a8; /* Change color on hover */
+}
 * {
   box-sizing: border-box;
   margin: 0;
