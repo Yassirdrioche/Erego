@@ -17,3 +17,4 @@ window.addEventListener("scroll", () => {
 function showHide() {
   navbar.classList.toggle("navToggle");
 }
+window.scrollTo({ top: 0, behavior: "smooth" });

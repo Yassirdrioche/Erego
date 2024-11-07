@@ -10,6 +10,7 @@
   --Primary-dark-blue--1: #113668;
   --Primary-dark-blue--2: #315484;
   --Primary-dark-blue--3: #50729f;
+
   --Primary-dark-blue--4: #708fbb;
   --Primary-dark-blue--5: #8fadd6;
   --Neutral-Colors-White: #fff;
@@ -358,7 +359,7 @@ footer {
   background: var(--Primary-dark-blue--1);
   position: relative;
   margin-top: 6rem;
-  max-width: 1300px; /* or any suitable value */
+  max-width: 100%; /* or any suitable value */
   margin: 6rem auto 0 auto; /* centers the footer */
 }
 footer hr {

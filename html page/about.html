@@ -1,345 +1,330 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="../svg/Erego.svg" type="image/x-icon" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link rel="stylesheet" href="../css/about.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <title>ABOUT EREGO</title>
-  </head>
 
-  <body>
-    <header class="header-container">
-      <section class="header-section">
-        <div>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="28"
-            height="61"
-            viewBox="0 0 28 61"
-            fill="none"
-          >
-            <path
-              d="M8.53252 20.857C9.48053 9.95446 18.3815 3.79218 24.1749 0C17.5389 7.11033 12.726 14.2923 11.8507 20.857C10.9026 27.9673 14.0627 36.9737 15.6428 41.2399C13.273 38.8698 7.58451 31.7595 8.53252 20.857Z"
-              fill="#113668"
-            />
-            <path
-              d="M18.9609 8.05836C17.0648 9.63844 13.1899 16.5908 12.4314 22.279C11.4834 29.3894 17.1716 38.8698 16.6976 45.0321C16.2977 50.231 15.2756 56.8826 12.4314 60.2008C17.6457 55.4606 19.9484 50.2181 20.4898 45.0321C21.331 36.9737 18.4869 35.0776 17.0648 28.4413C15.8689 22.86 16.1168 11.8505 18.9609 8.05836Z"
-              fill="#1DABD9"
-            />
-            <path
-              d="M24.6491 22.3315C23.8618 20.3633 21.489 20.2774 19.9089 20.4354C20.857 20.9094 22.7531 21.3834 21.805 24.7016C20.779 28.2927 6.32029 33.234 0 34.6561C2.2121 34.34 8.05837 33.234 14.6947 31.3379C22.6546 29.0636 25.5972 24.7016 24.6491 22.3315Z"
-              fill="#113668"
-            />
-            <path
-              d="M27.4933 27.0717C26.706 25.1035 24.3332 25.0177 22.7531 25.1757C23.7012 25.6497 25.5973 26.1237 24.6492 29.4418C23.6232 33.033 9.16449 37.9742 2.8442 39.3963C5.0563 39.0803 10.9026 37.9742 17.5389 36.0781C25.4988 33.8039 28.4414 29.4418 27.4933 27.0717Z"
-              fill="#113668"
-            />
-          </svg>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="../svg/Erego.svg" type="image/x-icon" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/about.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>ABOUT EREGO</title>
+</head>
 
-        <div class="header-logo">
-          <div class="header-title">EREGO</div>
-          <div class="header-sous-title">FSJES - Ait Melloul</div>
-        </div>
-      </section>
-      <section class="section-nav navToggle">
-        <ul>
-          <a href="../index.html">
-            <li>Accueil</li>
-          </a>
-          <a href="../html page/about.html">
-            <li>À propos de nous</li>
-          </a>
-          <div class="container-drop">
-            <li id="drop-down" class="drop-down">
-              Événements
-              <i class="fa-solid fa-angle-up rotate" id="angledown"></i>
-            </li>
-
-            <div id="drop-items" class="show show-style">
-              <a href="colloques.html">
-                <li>Colloques</li>
-              </a>
-
-              <label id="semini">
-                <li><label class="label">Séminaires et conferences</label></li>
-                <ul>
-                  <a href="./smr.html">
-                    <li>Séminaires d’EREGO</li>
-                  </a>
-
-                  <a href="./smrdctrx.html">
-                    <li>Séminaire Doctorales</li>
-                  </a>
-                  <a href="./conferences.html">
-                    <li>conférences</li>
-                  </a>
-                </ul>
-              </label>
-              <a href="./j-doctoral.html">
-                <li>Journées doctorales</li>
-              </a>
-              <a href="./autres.html">
-                <li>Autres</li>
-              </a>
-            </div>
-          </div>
-
-          <a href="./publications.html">
-            <li>Publications</li>
-          </a>
-          <button class="button_hidde" onclick="showHide()">
-            <i class="fa-solid fa-xmark"></i>
-          </button>
-        </ul>
-      </section>
-      <div class="bars">
-        <div class="fa-solid fa-bars bars" onclick="showHide()"></div>
-      </div>
-    </header>
-    <!-- =======================================About hero Section======================================== -->
-
-    <div>
-      <div class="hero-section-container">
-        <section class="hero-section">
-          <main class="hero-section-child">
-            <aside class="hero-title">À propos de l'EREGO</aside>
-
-            <aside class="here-p-container">
-              <p class="hero-section-p">
-                Figurant parmi les plus importantes et anciennes unités de
-                recherche universitaires au campus universitaire Ait Melloul,
-                l’EREGO a été créé en 2018 et relevant de la faculté des
-                sciences juridiques, économiques et sociales Ait Melloul..Elle a
-                pour objectif de participer à la promotion d’une recherche
-                rigoureuse et inventive en sciences économiques et en sciences
-                de gestion.Notre équipe regroupe des chercheurs permanents,
-                associés, et doctorants, tous engagés dans la recherche
-                d'excellence et la contribution au développement
-                socio-économique.
-              </p>
-            </aside>
-          </main>
-        </section>
-      </div>
-    </div>
-    <!-- ====================================================About-sous-hero============================================================================ -->
-    <div class="main-parent">
-      <main class="main-child">
-        <div class="notre-mession" data-aos="fade-up">Notre mession</div>
-        <section class="main-container">
-          <main class="main-sous-hero">
-            <article class="article1"></article>
-            <article class="article2 article1_2">
-              Notre mission est de contribuer à la promotion d'une recherche
-              rigoureuse et innovante en sciences économiques et de gestion, en
-              réponse aux enjeux contemporains. Nous favorisons une
-              collaboration étroite avec les acteurs socio-économiques pour
-              garantir que nos recherches ont un impact tangible sur le
-              développement durable et la compétitivité.
-            </article>
-          </main>
-        </section>
-      </main>
-      <!-- ================================================nos valeur ================================ -->
-      <main class="main-child main-child2">
-        <div class="notre-mession" data-aos="zoom-out-up">Nos Valeurs</div>
-        <section class="main-container">
-          <main class="main-sous-hero">
-            <article class="article1 article__1" style="order: 2"></article>
-            <article class="article2 article_2">
-              À l'EREGO, nous valorisons l'excellence, l'innovation, et la
-              collaboration. Notre approche pluridisciplinaire nous permet de
-              traiter les défis complexes avec une perspective globale, en
-              intégrant divers champs de connaissances pour proposer des
-              solutions pratiques et innovantes.
-            </article>
-          </main>
-        </section>
-      </main>
-    </div>
-
-    <!-- =================================Organigramme de l'EREGO============================== -->
-    <section class="organigramme__parent">
-      <div class="notre-mession" data-aos="fade-up">
-        Organigramme de l'EREGO
+<body>
+  <header class="header-container">
+    <section class="header-section">
+      <div>
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="61" viewBox="0 0 28 61" fill="none">
+          <path
+            d="M8.53252 20.857C9.48053 9.95446 18.3815 3.79218 24.1749 0C17.5389 7.11033 12.726 14.2923 11.8507 20.857C10.9026 27.9673 14.0627 36.9737 15.6428 41.2399C13.273 38.8698 7.58451 31.7595 8.53252 20.857Z"
+            fill="#113668" />
+          <path
+            d="M18.9609 8.05836C17.0648 9.63844 13.1899 16.5908 12.4314 22.279C11.4834 29.3894 17.1716 38.8698 16.6976 45.0321C16.2977 50.231 15.2756 56.8826 12.4314 60.2008C17.6457 55.4606 19.9484 50.2181 20.4898 45.0321C21.331 36.9737 18.4869 35.0776 17.0648 28.4413C15.8689 22.86 16.1168 11.8505 18.9609 8.05836Z"
+            fill="#1DABD9" />
+          <path
+            d="M24.6491 22.3315C23.8618 20.3633 21.489 20.2774 19.9089 20.4354C20.857 20.9094 22.7531 21.3834 21.805 24.7016C20.779 28.2927 6.32029 33.234 0 34.6561C2.2121 34.34 8.05837 33.234 14.6947 31.3379C22.6546 29.0636 25.5972 24.7016 24.6491 22.3315Z"
+            fill="#113668" />
+          <path
+            d="M27.4933 27.0717C26.706 25.1035 24.3332 25.0177 22.7531 25.1757C23.7012 25.6497 25.5973 26.1237 24.6492 29.4418C23.6232 33.033 9.16449 37.9742 2.8442 39.3963C5.0563 39.0803 10.9026 37.9742 17.5389 36.0781C25.4988 33.8039 28.4414 29.4418 27.4933 27.0717Z"
+            fill="#113668" />
+        </svg>
       </div>
 
-      <main class="organigramme__container">
-        <section class="organigramme__section" data-aos="fade-up">
-          Cellule reporting et rédaction
-        </section>
-        <section class="organigramme__section" data-aos="fade-up">
-          Cellule gestion des relations extérieurs et partenariat
-        </section>
-        <section class="organigramme__section" data-aos="fade-up">
-          Cellule communication
-        </section>
-        <section class="organigramme__section" data-aos="fade-up">
-          Cellule gestion des formations
-        </section>
-        <section class="organigramme__section" data-aos="fade-up">
-          Cellule gestion des colloques et conférences
-        </section>
-      </main>
+      <div class="header-logo">
+        <div class="header-title">EREGO</div>
+        <div class="header-sous-title">FSJES - Ait Melloul</div>
+      </div>
     </section>
-    <!-- ==============================================Notre__Equipe__section ================================== -->
+    <section class="section-nav navToggle">
+      <ul>
+        <a href="../index.html">
+          <li>Accueil</li>
+        </a>
+        <a href="../html page/about.html">
+          <li>À propos de nous</li>
+        </a>
+        <div class="container-drop">
+          <li id="drop-down" class="drop-down">
+            Événements
+            <i class="fa-solid fa-angle-up rotate" id="angledown"></i>
+          </li>
 
-    <div class="team-container">
-      <div class="team-child">
-        <div class="notre-mession" data-aos="fade-up">Notre Équipe</div>
-        <!-- =============================================Membres Permanents Section================================================= -->
-        <main class="membre-parent">
-          <div class="membre__title" data-aos="fade-up">Membres Permanents</div>
-          <div class="member-container">
-            <section class="membre__section" data-aos="fade-up">
-              <p class="member__p">Ouhna Laila</p>
-              <p class="member__sous__p">FSJES Ait Melloul</p>
-            </section>
-            <section class="membre__section" data-aos="fade-up">
-              <p class="member__p">El Bourki Mohamed</p>
-              <p class="member__sous__p">FSJES Ait Melloul</p>
-            </section>
-            <section class="membre__section" data-aos="fade-up">
-              <p class="member__p">Khallaf Nezha</p>
-              <p class="member__sous__p">FSJES Ait Melloul</p>
-            </section>
-            <section class="membre__section" data-aos="fade-up">
-              <p class="member__p">Ouboutaib Fatimazahra</p>
-              <p class="member__sous__p">FSJES Ait Melloul</p>
-            </section>
-            <section class="membre__section" data-aos="fade-up">
-              <p class="member__p">El Amri Kaltoum</p>
-              <p class="member__sous__p">FSJES Ait Melloul</p>
-            </section>
-            <section class="membre__section" data-aos="fade-up">
-              <p class="member__p">Guerguer Wafa</p>
-              <p class="member__sous__p">FSJES Ait Melloul</p>
-            </section>
-          </div>
-        </main>
+          <div id="drop-items" class="show show-style">
+            <a href="colloques.html">
+              <li>Colloques</li>
+            </a>
 
-        <!-- =============================================Membres Associés Section================================================= -->
-        <main class="membre-parent">
-          <div class="membre__title" data-aos="fade-up">Membres Associés</div>
-          <div class="member-container">
-            <section class="membre__section" data-aos="fade-up">
-              <p class="member__p">Balambo Mohamed Amine</p>
-              <p class="member__sous__p">FSJES Marrakech</p>
-            </section>
-            <section class="membre__section" data-aos="fade-up">
-              <p class="member__p">Ajerrame Malika</p>
-              <p class="member__sous__p">FSJES Agadir</p>
-            </section>
-            <section class="membre__section" data-aos="fade-up">
-              <p class="member__p">El Korchi Akram</p>
-              <p class="member__sous__p">ENSA Agadir</p>
-            </section>
-            <!-- =========================================part 2========================================= -->
-            <section class="membre__section" data-aos="fade-up">
-              <p class="member__p">Henault Georges</p>
-              <p class="member__sous__p">Université d'Ottawa</p>
-            </section>
-            <section class="membre__section" data-aos="fade-up">
-              <p class="member__p">Oubihi Jamila</p>
-              <p class="member__sous__p">ENA Agadir</p>
-            </section>
-            <section class="membre__section" data-aos="fade-up">
-              <p class="member__p">Semouane Khalissa</p>
-              <p class="member__sous__p">Université Oran</p>
-            </section>
-            <!-- ======================================================part 3================================================ -->
-            <section class="membre__section" data-aos="fade-up">
-              <p class="member__p">Gallouj Camal</p>
-              <p class="member__sous__p">Université Paris 13</p>
-            </section>
-            <section class="membre__section" data-aos="fade-up">
-              <p class="member__p">El Alaoui Amine Meryem</p>
-              <p class="member__sous__p">Université Mohamed 5</p>
-            </section>
-            <section class="membre__section" data-aos="fade-up">
-              <p class="member__p">Rhabra Sanaa</p>
-              <p class="member__sous__p">Université Ibn Zohr</p>
-            </section>
-          </div>
-        </main>
+            <label id="semini">
+              <li><label class="label">Séminaires et conferences</label></li>
+              <ul>
+                <a href="./smr.html">
+                  <li>Séminaires d’EREGO</li>
+                </a>
 
-        <!-- ====================================PART 4 ======================================= -->
-        <main class="membre-parent">
-          <div class="membre__title" data-aos="fade-up">Doctorants</div>
-          <div class="member-container">
-            <section class="membre__section" data-aos="fade-up">
-              <p class="member__p">Narhnarh Youssef</p>
-            </section>
-            <section class="membre__section" data-aos="fade-up">
-              <p class="member__p">Manar Ahmed</p>
-            </section>
-            <section class="membre__section" data-aos="fade-up">
-              <p class="member__p">Bouzggd Mohamed</p>
-            </section>
-            <section class="membre__section" data-aos="fade-up">
-              <p class="member__p">El Henchaoui Yassine</p>
-            </section>
-            <section class="membre__section" data-aos="fade-up">
-              <p class="member__p">Mekkaoui Alaoui Mariem</p>
-            </section>
-            <section class="membre__section" data-aos="fade-up">
-              <p class="member__p">Hzam Amine</p>
-            </section>
-            <section class="membre__section doctor__last">
-              <p class="member__p">Chbani Omaima</p>
-            </section>
+                <a href="./smrdctrx.html">
+                  <li>Séminaire Doctorales</li>
+                </a>
+                <a href="./conferences.html">
+                  <li>conférences</li>
+                </a>
+              </ul>
+            </label>
+            <a href="./j-doctoral.html">
+              <li>Journées doctorales</li>
+            </a>
+            <a href="./autres.html">
+              <li>Autres</li>
+            </a>
           </div>
+        </div>
+
+        <a href="./publications.html">
+          <li>Publications</li>
+        </a>
+        <button class="button_hidde" onclick="showHide()">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </ul>
+    </section>
+    <div class="bars">
+      <div class="fa-solid fa-bars bars" onclick="showHide()"></div>
+    </div>
+  </header>
+  <!-- =======================================About hero Section======================================== -->
+
+  <div>
+    <div class="hero-section-container" data-aos="fade-up">
+      <section class=" hero-section">
+        <main class="hero-section-child">
+          <aside class="hero-title">À propos de l'EREGO</aside>
+
+          <aside class="here-p-container">
+            <p class="hero-section-p">
+              Figurant parmi les plus importantes et anciennes unités de
+              recherche universitaires au campus universitaire Ait Melloul,
+              l’EREGO a été créé en 2018 et relevant de la faculté des
+              sciences juridiques, économiques et sociales Ait Melloul..Elle a
+              pour objectif de participer à la promotion d’une recherche
+              rigoureuse et inventive en sciences économiques et en sciences
+              de gestion.Notre équipe regroupe des chercheurs permanents,
+              associés, et doctorants, tous engagés dans la recherche
+              d'excellence et la contribution au développement
+              socio-économique.
+            </p>
+          </aside>
         </main>
-      </div>
+      </section>
+    </div>
+  </div>
+  <!-- ====================================================About-sous-hero============================================================================ -->
+  <div class="main-parent">
+    <main class="main-child">
+      <div class="notre-mession" data-aos="fade-up">Notre mession</div>
+      <section class="main-container">
+        <main class="main-sous-hero">
+          <article class="article1" data-aos="fade-up"></article>
+          <article class="article2 article1_2" data-aos="fade-up">
+            Notre mission est de contribuer à la promotion d'une recherche
+            rigoureuse et innovante en sciences économiques et de gestion, en
+            réponse aux enjeux contemporains. Nous favorisons une
+            collaboration étroite avec les acteurs socio-économiques pour
+            garantir que nos recherches ont un impact tangible sur le
+            développement durable et la compétitivité.
+          </article>
+        </main>
+      </section>
+    </main>
+    <!-- ================================================nos valeur ================================ -->
+    <main class="main-child main-child2">
+      <div class="notre-mession" data-aos="fade-up">Nos Valeurs</div>
+      <section class="main-container">
+        <main class="main-sous-hero">
+          <article class="article1 article__1" style="order: 2" data-aos="fade-up"></article>
+          <article class="article2 article_2" data-aos="fade-up">
+            À l'EREGO, nous valorisons l'excellence, l'innovation, et la
+            collaboration. Notre approche pluridisciplinaire nous permet de
+            traiter les défis complexes avec une perspective globale, en
+            intégrant divers champs de connaissances pour proposer des
+            solutions pratiques et innovantes.
+          </article>
+        </main>
+      </section>
+    </main>
+  </div>
+
+  <!-- =================================Organigramme de l'EREGO============================== -->
+  <section class="organigramme__parent">
+    <div class="notre-mession" data-aos="fade-up">
+      Organigramme de l'EREGO
     </div>
 
-    <!-- =====================================================Footer============================================================ -->
-    <!-- _____________________________________________footer___________________________________________________ -->
-    <footer class="footer">
-      <hr />
-      <div class="footer__parent">
-        <section class="footer__part1">
-          <article class="footer__title">EREGO</article>
-          <article class="footer__sous__title">
-            <aside class="sous__title1">FSJES - Ait Melloul</aside>
-            <aside class="sous__title2"></aside>
-          </article>
-        </section>
+    <main class="organigramme__container">
+      <section class="organigramme__section" data-aos="fade-up">
+        Cellule reporting et rédaction
+      </section>
+      <section class="organigramme__section" data-aos="fade-up">
+        Cellule gestion des relations extérieurs et partenariat
+      </section>
+      <section class="organigramme__section" data-aos="fade-up">
+        Cellule communication
+      </section>
+      <section class="organigramme__section" data-aos="fade-up">
+        Cellule gestion des formations
+      </section>
+      <section class="organigramme__section" data-aos="fade-up">
+        Cellule gestion des colloques et conférences
+      </section>
+    </main>
+  </section>
+  <!-- ==============================================Notre__Equipe__section ================================== -->
 
-        <section class="footer__part2">
-          <article class="footer__copyright">
-            Copyright © 2024 EREGO | All Rights Reserved
-          </article>
-          <article class="footer__social__icon">
-            <a target="_blank" href="#">
-              <img loading="lazy" src="../picture/Facebook.png" alt=""
-            /></a>
-            <a target="_blank" href="#">
-              <img loading="lazy" src="../picture/Instagram.png" alt=""
-            /></a>
-            <a target="_blank" href="#">
-              <img loading="lazy" src="../picture/Linkden.png" alt=""
-            /></a>
-          </article>
-        </section>
-      </div>
-    </footer>
-    <button class="fa-solid fa-arrow-up" id="btnUp"></button>
-    <script src="../asset/js/script.js"></script>
-    <script src="../asset/js/index.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-  </body>
+  <div class="team-container">
+    <div class="team-child">
+      <div class="notre-mession" data-aos="fade-up">Notre Équipe</div>
+      <!-- =============================================Membres Permanents Section================================================= -->
+      <main class="membre-parent">
+        <div class="membre__title" data-aos="fade-up">Membres Permanents</div>
+        <div class="member-container">
+          <section class="membre__section" data-aos="fade-up">
+            <p class="member__p">Ouhna Laila</p>
+            <p class="member__sous__p">FSJES Ait Melloul</p>
+          </section>
+          <section class="membre__section" data-aos="fade-up">
+            <p class="member__p">El Bourki Mohamed</p>
+            <p class="member__sous__p">FSJES Ait Melloul</p>
+          </section>
+          <section class="membre__section" data-aos="fade-up">
+            <p class="member__p">Khallaf Nezha</p>
+            <p class="member__sous__p">FSJES Ait Melloul</p>
+          </section>
+          <section class="membre__section" data-aos="fade-up">
+            <p class="member__p">Ouboutaib Fatimazahra</p>
+            <p class="member__sous__p">FSJES Ait Melloul</p>
+          </section>
+          <section class="membre__section" data-aos="fade-up">
+            <p class="member__p">El Amri Kaltoum</p>
+            <p class="member__sous__p">FSJES Ait Melloul</p>
+          </section>
+          <section class="membre__section" data-aos="fade-up">
+            <p class="member__p">Guerguer Wafa</p>
+            <p class="member__sous__p">FSJES Ait Melloul</p>
+          </section>
+        </div>
+      </main>
+
+      <!-- =============================================Membres Associés Section================================================= -->
+      <main class="membre-parent">
+        <div class="membre__title" data-aos="fade-up">Membres Associés</div>
+        <div class="member-container">
+          <section class="membre__section" data-aos="fade-up">
+            <p class="member__p">Balambo Mohamed Amine</p>
+            <p class="member__sous__p">FSJES Marrakech</p>
+          </section>
+          <section class="membre__section" data-aos="fade-up">
+            <p class="member__p">Ajerrame Malika</p>
+            <p class="member__sous__p">FSJES Agadir</p>
+          </section>
+          <section class="membre__section" data-aos="fade-up">
+            <p class="member__p">El Korchi Akram</p>
+            <p class="member__sous__p">ENSA Agadir</p>
+          </section>
+          <!-- =========================================part 2========================================= -->
+          <section class="membre__section" data-aos="fade-up">
+            <p class="member__p">Henault Georges</p>
+            <p class="member__sous__p">Université d'Ottawa</p>
+          </section>
+          <section class="membre__section" data-aos="fade-up">
+            <p class="member__p">Oubihi Jamila</p>
+            <p class="member__sous__p">ENA Agadir</p>
+          </section>
+          <section class="membre__section" data-aos="fade-up">
+            <p class="member__p">Semouane Khalissa</p>
+            <p class="member__sous__p">Université Oran</p>
+          </section>
+          <!-- ======================================================part 3================================================ -->
+          <section class="membre__section" data-aos="fade-up">
+            <p class="member__p">Gallouj Camal</p>
+            <p class="member__sous__p">Université Paris 13</p>
+          </section>
+          <section class="membre__section" data-aos="fade-up">
+            <p class="member__p">El Alaoui Amine Meryem</p>
+            <p class="member__sous__p">Université Mohamed 5</p>
+          </section>
+          <section class="membre__section" data-aos="fade-up">
+            <p class="member__p">Rhabra Sanaa</p>
+            <p class="member__sous__p">Université Ibn Zohr</p>
+          </section>
+        </div>
+      </main>
+
+      <!-- ====================================PART 4 ======================================= -->
+      <main class="membre-parent">
+        <div class="membre__title" data-aos="fade-up">Doctorants</div>
+        <div class="member-container">
+          <section class="membre__section" data-aos="fade-up">
+            <p class="member__p">Narhnarh Youssef</p>
+          </section>
+          <section class="membre__section" data-aos="fade-up">
+            <p class="member__p">Manar Ahmed</p>
+          </section>
+          <section class="membre__section" data-aos="fade-up">
+            <p class="member__p">Bouzggd Mohamed</p>
+          </section>
+          <section class="membre__section" data-aos="fade-up">
+            <p class="member__p">El Henchaoui Yassine</p>
+          </section>
+          <section class="membre__section" data-aos="fade-up">
+            <p class="member__p">Mekkaoui Alaoui Mariem</p>
+          </section>
+          <section class="membre__section" data-aos="fade-up">
+            <p class="member__p">Hzam Amine</p>
+          </section>
+          <section class="membre__section doctor__last">
+            <p class="member__p">Chbani Omaima</p>
+          </section>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <!-- =====================================================Footer============================================================ -->
+  <!-- _____________________________________________footer___________________________________________________ -->
+  <footer class="footer">
+    <hr />
+    <div class="footer__parent">
+      <section class="footer__part1">
+        <article class="footer__title">EREGO</article>
+        <article class="footer__sous__title">
+          <aside class="sous__title1">FSJES - Ait Melloul</aside>
+          <aside class="sous__title2"></aside>
+        </article>
+      </section>
+
+      <section class="footer__part2">
+        <article class="footer__copyright">
+          Copyright © 2024 EREGO | All Rights Reserved
+        </article>
+        <article class="footer__social__icon">
+          <a target="_blank" href="#">
+            <img loading="lazy" src="../picture/Facebook.png" alt="" /></a>
+          <a target="_blank" href="#">
+            <img loading="lazy" src="../picture/Instagram.png" alt="" /></a>
+          <a target="_blank" href="#">
+            <img loading="lazy" src="../picture/Linkden.png" alt="" /></a>
+        </article>
+      </section>
+    </div>
+  </footer>
+  <button class="fa-solid fa-arrow-up" id="btnUp"></button>
+  <script src="../asset/js/script.js"></script>
+  <script src="../asset/js/index.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
 </html>

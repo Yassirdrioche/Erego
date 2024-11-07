@@ -456,7 +456,7 @@ pre {
 .ouvrage__container {
   display: flex;
   gap: 3rem;
-  margin: 6rem auto 0 auto;
+  margin: 3rem auto 0 auto;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -614,7 +614,7 @@ footer {
   background: var(--Primary-dark-blue--1);
   position: relative;
   margin-top: 6rem;
-  max-width: 1300px; /* or any suitable value */
+  max-width: 100%; /* or any suitable value */
   margin: 6rem auto 0 auto; /* centers the footer */
 }
 footer hr {
@@ -705,4 +705,24 @@ footer hr {
   font-weight: bold;
   font-size: 1rem;
   transition: var(--transition-all);
+}
+.scroll {
+  position: fixed;
+  top: 0;
+  max-width: 100%;
+  width: 0;
+  left: 0;
+  animation: scrolling 0.4s ease;
+  height: 4px;
+  animation-timeline: scroll();
+  background: var(--Primary-dark-blue--1);
+  z-index: 99999999999;
+}
+@keyframes scrolling {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
 }
