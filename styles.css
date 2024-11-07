@@ -364,7 +364,14 @@ header {
 }
 
 /* ---------------------------------------------MAIN-SOUS-HERO---------------------------------------------------- */
-
+.main-sous-parent {
+  display: flex;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
 .main-sous-hero {
   display: flex;
   width: 66.75rem;
@@ -434,7 +441,12 @@ header {
 
 /* <!-- --------------------------------------------------- Evenement Section -------------------------------------- --> */
 .Evenement-parent {
-  margin-top: 6rem;
+  margin: 6rem auto 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
 }
 .Evenement-section-conatainer {
   display: flex;
@@ -503,7 +515,13 @@ header {
 
 /* ------------------------------------------ORIENTATION SECTION ----------------------------------------------- */
 .orientations-parent {
-  margin-top: 6rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  margin: 6rem auto 0 auto;
+  flex-direction: column;
 }
 .orientations-container {
   display: flex;
@@ -566,13 +584,14 @@ header {
 }
 .Axe-container {
   display: flex;
-  width: 90rem;
+  width: 100%;
+  max-width: 100%;
   padding: 0rem 0.5rem 6rem 0rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 3rem;
-  margin-top: 6rem;
+  margin: 6rem auto 0 auto;
   position: relative;
   cursor: pointer;
 }
@@ -704,13 +723,15 @@ header {
 /* ----------------------------- */
 .Impact-parent {
   display: flex;
-  width: 90rem;
+  width: 100%;
+  max-width: 100%;
+
   padding: 0rem 0.5rem 6rem 0rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 1.5rem;
-  margin-top: 3rem;
+  margin: 3rem auto 0 auto;
 }
 .Impact-child {
   display: flex;
@@ -847,6 +868,15 @@ header {
   line-height: 120%;
 }
 /* ------------------------------------------------------Actualite section--------------------------------------------------- */
+.swiper-section {
+  display: flex;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 .swiper-container {
   display: flex;
   justify-content: center;
