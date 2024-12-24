@@ -2,6 +2,7 @@ const dropDown = document.querySelector("#drop-down");
 const dropItems = document.querySelector("#drop-items");
 const arrowUp = document.querySelector("#angledown");
 const navbar = document.querySelector(".section-nav");
+const loader = document.querySelector(".preloader");
 
 dropDown.addEventListener("click", () => {
   arrowUp.classList.toggle("rotate");
@@ -18,3 +19,6 @@ function showHide() {
   navbar.classList.toggle("navToggle");
 }
 window.scrollTo({ top: 0, behavior: "smooth" });
+window.addEventListener("load", () => {
+  loader.style.display = "none";
+});
